@@ -1,6 +1,6 @@
 # EMR to CDP Demo
 <div align="center">
-<img src="" width="100" height="820" align="middle">
+<img src="https://github.com/paulvid/emr_to_cdp/raw/master/data/cloudera_logo_darkorange.png" width="820" height="100" align="middle">
 </div>
 
 # Overview
@@ -28,7 +28,7 @@ It automates the following:
 
 ### 1. Clone this repository
 ```
-git clone 
+git clone https://github.com/paulvid/emr_to_cdp.git
 ```
 
 ### 2. Add data and config files
