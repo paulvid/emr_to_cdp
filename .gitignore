@@ -1,0 +1,9 @@
+data/emr/.DS_Store
+.DS_Store
+data/.DS_Store
+scripts/aws/core-site.xml.old
+scripts/aws/core-site.xml
+scripts/aws/hdfs-site.xml.old
+scripts/aws/hdfs-site.xml
+scripts/wxm/altus.json
+scripts/wxm/uploader.tar
