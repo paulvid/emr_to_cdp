@@ -674,9 +674,9 @@
 <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
 <descriptors>
     <entry>
-        <key>Command Arguments</key>
+        <key>Max Attribute Length</key>
         <value>
-            <name>Command Arguments</name>
+            <name>Max Attribute Length</name>
         </value>
     </entry>
     <entry>
@@ -686,21 +686,9 @@
         </value>
     </entry>
     <entry>
-        <key>Ignore STDIN</key>
-        <value>
-            <name>Ignore STDIN</name>
-        </value>
-    </entry>
-    <entry>
         <key>Working Directory</key>
         <value>
             <name>Working Directory</name>
-        </value>
-    </entry>
-    <entry>
-        <key>Argument Delimiter</key>
-        <value>
-            <name>Argument Delimiter</name>
         </value>
     </entry>
     <entry>
@@ -710,9 +698,21 @@
         </value>
     </entry>
     <entry>
-        <key>Max Attribute Length</key>
+        <key>Argument Delimiter</key>
         <value>
-            <name>Max Attribute Length</name>
+            <name>Argument Delimiter</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Ignore STDIN</key>
+        <value>
+            <name>Ignore STDIN</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Command Arguments</key>
+        <value>
+            <name>Command Arguments</name>
         </value>
     </entry>
 </descriptors>
@@ -721,30 +721,30 @@
 <penaltyDuration>30 sec</penaltyDuration>
 <properties>
     <entry>
-        <key>Command Arguments</key>
-        <value>${MasterAddress};${base_dir}</value>
+        <key>Max Attribute Length</key>
+        <value>256</value>
     </entry>
     <entry>
         <key>Command Path</key>
         <value>${base_dir}/scripts/aws/create_hdfs_log_folder.sh</value>
     </entry>
     <entry>
-        <key>Ignore STDIN</key>
-        <value>false</value>
+        <key>Working Directory</key>
     </entry>
     <entry>
-        <key>Working Directory</key>
+        <key>Output Destination Attribute</key>
     </entry>
     <entry>
         <key>Argument Delimiter</key>
         <value>;</value>
     </entry>
     <entry>
-        <key>Output Destination Attribute</key>
+        <key>Ignore STDIN</key>
+        <value>false</value>
     </entry>
     <entry>
-        <key>Max Attribute Length</key>
-        <value>256</value>
+        <key>Command Arguments</key>
+        <value>${MasterAddress};${base_dir}</value>
     </entry>
 </properties>
 <runDurationMillis>0</runDurationMillis>
@@ -788,9 +788,9 @@
 <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
 <descriptors>
     <entry>
-        <key>Command Arguments</key>
+        <key>Max Attribute Length</key>
         <value>
-            <name>Command Arguments</name>
+            <name>Max Attribute Length</name>
         </value>
     </entry>
     <entry>
@@ -800,21 +800,9 @@
         </value>
     </entry>
     <entry>
-        <key>Ignore STDIN</key>
-        <value>
-            <name>Ignore STDIN</name>
-        </value>
-    </entry>
-    <entry>
         <key>Working Directory</key>
         <value>
             <name>Working Directory</name>
-        </value>
-    </entry>
-    <entry>
-        <key>Argument Delimiter</key>
-        <value>
-            <name>Argument Delimiter</name>
         </value>
     </entry>
     <entry>
@@ -824,9 +812,21 @@
         </value>
     </entry>
     <entry>
-        <key>Max Attribute Length</key>
+        <key>Argument Delimiter</key>
         <value>
-            <name>Max Attribute Length</name>
+            <name>Argument Delimiter</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Ignore STDIN</key>
+        <value>
+            <name>Ignore STDIN</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Command Arguments</key>
+        <value>
+            <name>Command Arguments</name>
         </value>
     </entry>
 </descriptors>
@@ -835,30 +835,30 @@
 <penaltyDuration>30 sec</penaltyDuration>
 <properties>
     <entry>
-        <key>Command Arguments</key>
-        <value>${PublicIp};${PrivateDnsName}</value>
+        <key>Max Attribute Length</key>
+        <value>256</value>
     </entry>
     <entry>
         <key>Command Path</key>
         <value>${base_dir}/scripts/aws/add_ips_to_host.sh</value>
     </entry>
     <entry>
-        <key>Ignore STDIN</key>
-        <value>false</value>
+        <key>Working Directory</key>
     </entry>
     <entry>
-        <key>Working Directory</key>
+        <key>Output Destination Attribute</key>
     </entry>
     <entry>
         <key>Argument Delimiter</key>
         <value>;</value>
     </entry>
     <entry>
-        <key>Output Destination Attribute</key>
+        <key>Ignore STDIN</key>
+        <value>false</value>
     </entry>
     <entry>
-        <key>Max Attribute Length</key>
-        <value>256</value>
+        <key>Command Arguments</key>
+        <value>${PublicIp};${PrivateDnsName}</value>
     </entry>
 </properties>
 <runDurationMillis>0</runDurationMillis>
@@ -902,9 +902,15 @@
 <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
 <descriptors>
     <entry>
-        <key>Hostname</key>
+        <key>Proxy Host</key>
         <value>
-            <name>Hostname</name>
+            <name>Proxy Host</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Http Proxy Password</key>
+        <value>
+            <name>Http Proxy Password</name>
         </value>
     </entry>
     <entry>
@@ -914,45 +920,28 @@
         </value>
     </entry>
     <entry>
-        <key>Username</key>
-        <value>
-            <name>Username</name>
-        </value>
-    </entry>
-    <entry>
-        <key>Password</key>
-        <value>
-            <name>Password</name>
-        </value>
-    </entry>
-    <entry>
-        <key>Private Key Path</key>
-        <value>
-            <name>Private Key Path</name>
-        </value>
-    </entry>
-    <entry>
-        <key>Private Key Passphrase</key>
-        <value>
-            <name>Private Key Passphrase</name>
-        </value>
-    </entry>
-    <entry>
         <key>Remote File</key>
         <value>
             <name>Remote File</name>
         </value>
     </entry>
     <entry>
-        <key>Completion Strategy</key>
+        <key>proxy-configuration-service</key>
         <value>
-            <name>Completion Strategy</name>
+            <identifiesControllerService>org.apache.nifi.proxy.ProxyConfigurationService</identifiesControllerService>
+            <name>proxy-configuration-service</name>
         </value>
     </entry>
     <entry>
-        <key>Move Destination Directory</key>
+        <key>Http Proxy Username</key>
         <value>
-            <name>Move Destination Directory</name>
+            <name>Http Proxy Username</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Hostname</key>
+        <value>
+            <name>Hostname</name>
         </value>
     </entry>
     <entry>
@@ -962,9 +951,51 @@
         </value>
     </entry>
     <entry>
+        <key>Host Key File</key>
+        <value>
+            <name>Host Key File</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Use Compression</key>
+        <value>
+            <name>Use Compression</name>
+        </value>
+    </entry>
+    <entry>
         <key>Disable Directory Listing</key>
         <value>
             <name>Disable Directory Listing</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Send Keep Alive On Timeout</key>
+        <value>
+            <name>Send Keep Alive On Timeout</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Proxy Type</key>
+        <value>
+            <name>Proxy Type</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Completion Strategy</key>
+        <value>
+            <name>Completion Strategy</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Proxy Port</key>
+        <value>
+            <name>Proxy Port</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Private Key Passphrase</key>
+        <value>
+            <name>Private Key Passphrase</name>
         </value>
     </entry>
     <entry>
@@ -980,15 +1011,21 @@
         </value>
     </entry>
     <entry>
-        <key>Send Keep Alive On Timeout</key>
+        <key>Private Key Path</key>
         <value>
-            <name>Send Keep Alive On Timeout</name>
+            <name>Private Key Path</name>
         </value>
     </entry>
     <entry>
-        <key>Host Key File</key>
+        <key>Username</key>
         <value>
-            <name>Host Key File</name>
+            <name>Username</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Move Destination Directory</key>
+        <value>
+            <name>Move Destination Directory</name>
         </value>
     </entry>
     <entry>
@@ -998,46 +1035,9 @@
         </value>
     </entry>
     <entry>
-        <key>Use Compression</key>
+        <key>Password</key>
         <value>
-            <name>Use Compression</name>
-        </value>
-    </entry>
-    <entry>
-        <key>proxy-configuration-service</key>
-        <value>
-            <identifiesControllerService>org.apache.nifi.proxy.ProxyConfigurationService</identifiesControllerService>
-            <name>proxy-configuration-service</name>
-        </value>
-    </entry>
-    <entry>
-        <key>Proxy Type</key>
-        <value>
-            <name>Proxy Type</name>
-        </value>
-    </entry>
-    <entry>
-        <key>Proxy Host</key>
-        <value>
-            <name>Proxy Host</name>
-        </value>
-    </entry>
-    <entry>
-        <key>Proxy Port</key>
-        <value>
-            <name>Proxy Port</name>
-        </value>
-    </entry>
-    <entry>
-        <key>Http Proxy Username</key>
-        <value>
-            <name>Http Proxy Username</name>
-        </value>
-    </entry>
-    <entry>
-        <key>Http Proxy Password</key>
-        <value>
-            <name>Http Proxy Password</name>
+            <name>Password</name>
         </value>
     </entry>
 </descriptors>
@@ -1046,45 +1046,61 @@
 <penaltyDuration>30 sec</penaltyDuration>
 <properties>
     <entry>
-        <key>Hostname</key>
-        <value>${MasterAddress}</value>
+        <key>Proxy Host</key>
+    </entry>
+    <entry>
+        <key>Http Proxy Password</key>
     </entry>
     <entry>
         <key>Port</key>
         <value>22</value>
     </entry>
     <entry>
-        <key>Username</key>
-        <value>hadoop</value>
-    </entry>
-    <entry>
-        <key>Password</key>
-    </entry>
-    <entry>
-        <key>Private Key Path</key>
-        <value>${private_key_location}</value>
-    </entry>
-    <entry>
-        <key>Private Key Passphrase</key>
-    </entry>
-    <entry>
         <key>Remote File</key>
         <value>/etc/hadoop/conf.empty/hdfs-site.xml</value>
     </entry>
     <entry>
-        <key>Completion Strategy</key>
-        <value>None</value>
+        <key>proxy-configuration-service</key>
     </entry>
     <entry>
-        <key>Move Destination Directory</key>
+        <key>Http Proxy Username</key>
+    </entry>
+    <entry>
+        <key>Hostname</key>
+        <value>${MasterAddress}</value>
     </entry>
     <entry>
         <key>Create Directory</key>
         <value>false</value>
     </entry>
     <entry>
+        <key>Host Key File</key>
+    </entry>
+    <entry>
+        <key>Use Compression</key>
+        <value>false</value>
+    </entry>
+    <entry>
         <key>Disable Directory Listing</key>
         <value>false</value>
+    </entry>
+    <entry>
+        <key>Send Keep Alive On Timeout</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>Proxy Type</key>
+        <value>DIRECT</value>
+    </entry>
+    <entry>
+        <key>Completion Strategy</key>
+        <value>None</value>
+    </entry>
+    <entry>
+        <key>Proxy Port</key>
+    </entry>
+    <entry>
+        <key>Private Key Passphrase</key>
     </entry>
     <entry>
         <key>Connection Timeout</key>
@@ -1095,38 +1111,22 @@
         <value>30 sec</value>
     </entry>
     <entry>
-        <key>Send Keep Alive On Timeout</key>
-        <value>true</value>
+        <key>Private Key Path</key>
+        <value>${private_key_location}</value>
     </entry>
     <entry>
-        <key>Host Key File</key>
+        <key>Username</key>
+        <value>hadoop</value>
+    </entry>
+    <entry>
+        <key>Move Destination Directory</key>
     </entry>
     <entry>
         <key>Strict Host Key Checking</key>
         <value>false</value>
     </entry>
     <entry>
-        <key>Use Compression</key>
-        <value>false</value>
-    </entry>
-    <entry>
-        <key>proxy-configuration-service</key>
-    </entry>
-    <entry>
-        <key>Proxy Type</key>
-        <value>DIRECT</value>
-    </entry>
-    <entry>
-        <key>Proxy Host</key>
-    </entry>
-    <entry>
-        <key>Proxy Port</key>
-    </entry>
-    <entry>
-        <key>Http Proxy Username</key>
-    </entry>
-    <entry>
-        <key>Http Proxy Password</key>
+        <key>Password</key>
     </entry>
 </properties>
 <runDurationMillis>0</runDurationMillis>
@@ -1174,27 +1174,15 @@
 <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
 <descriptors>
     <entry>
+        <key>character-set</key>
+        <value>
+            <name>character-set</name>
+        </value>
+    </entry>
+    <entry>
         <key>File Size</key>
         <value>
             <name>File Size</name>
-        </value>
-    </entry>
-    <entry>
-        <key>Batch Size</key>
-        <value>
-            <name>Batch Size</name>
-        </value>
-    </entry>
-    <entry>
-        <key>Data Format</key>
-        <value>
-            <name>Data Format</name>
-        </value>
-    </entry>
-    <entry>
-        <key>Unique FlowFiles</key>
-        <value>
-            <name>Unique FlowFiles</name>
         </value>
     </entry>
     <entry>
@@ -1204,9 +1192,21 @@
         </value>
     </entry>
     <entry>
-        <key>character-set</key>
+        <key>Batch Size</key>
         <value>
-            <name>character-set</name>
+            <name>Batch Size</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Unique FlowFiles</key>
+        <value>
+            <name>Unique FlowFiles</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Data Format</key>
+        <value>
+            <name>Data Format</name>
         </value>
     </entry>
 </descriptors>
@@ -1215,27 +1215,27 @@
 <penaltyDuration>30 sec</penaltyDuration>
 <properties>
     <entry>
+        <key>character-set</key>
+        <value>UTF-8</value>
+    </entry>
+    <entry>
         <key>File Size</key>
         <value>0B</value>
+    </entry>
+    <entry>
+        <key>generate-ff-custom-text</key>
     </entry>
     <entry>
         <key>Batch Size</key>
         <value>1</value>
     </entry>
     <entry>
-        <key>Data Format</key>
-        <value>Text</value>
-    </entry>
-    <entry>
         <key>Unique FlowFiles</key>
         <value>false</value>
     </entry>
     <entry>
-        <key>generate-ff-custom-text</key>
-    </entry>
-    <entry>
-        <key>character-set</key>
-        <value>UTF-8</value>
+        <key>Data Format</key>
+        <value>Text</value>
     </entry>
 </properties>
 <runDurationMillis>0</runDurationMillis>
@@ -1271,9 +1271,9 @@
 <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
 <descriptors>
     <entry>
-        <key>Command Arguments</key>
+        <key>Max Attribute Length</key>
         <value>
-            <name>Command Arguments</name>
+            <name>Max Attribute Length</name>
         </value>
     </entry>
     <entry>
@@ -1283,21 +1283,9 @@
         </value>
     </entry>
     <entry>
-        <key>Ignore STDIN</key>
-        <value>
-            <name>Ignore STDIN</name>
-        </value>
-    </entry>
-    <entry>
         <key>Working Directory</key>
         <value>
             <name>Working Directory</name>
-        </value>
-    </entry>
-    <entry>
-        <key>Argument Delimiter</key>
-        <value>
-            <name>Argument Delimiter</name>
         </value>
     </entry>
     <entry>
@@ -1307,9 +1295,21 @@
         </value>
     </entry>
     <entry>
-        <key>Max Attribute Length</key>
+        <key>Argument Delimiter</key>
         <value>
-            <name>Max Attribute Length</name>
+            <name>Argument Delimiter</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Ignore STDIN</key>
+        <value>
+            <name>Ignore STDIN</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Command Arguments</key>
+        <value>
+            <name>Command Arguments</name>
         </value>
     </entry>
 </descriptors>
@@ -1318,30 +1318,30 @@
 <penaltyDuration>30 sec</penaltyDuration>
 <properties>
     <entry>
-        <key>Command Arguments</key>
-        <value>${MasterAddress};${base_dir}/scripts/aws/read_worldwidebank_data.json</value>
+        <key>Max Attribute Length</key>
+        <value>256</value>
     </entry>
     <entry>
         <key>Command Path</key>
         <value>${base_dir}/scripts/aws/load_note.sh</value>
     </entry>
     <entry>
-        <key>Ignore STDIN</key>
-        <value>false</value>
+        <key>Working Directory</key>
     </entry>
     <entry>
-        <key>Working Directory</key>
+        <key>Output Destination Attribute</key>
     </entry>
     <entry>
         <key>Argument Delimiter</key>
         <value>;</value>
     </entry>
     <entry>
-        <key>Output Destination Attribute</key>
+        <key>Ignore STDIN</key>
+        <value>false</value>
     </entry>
     <entry>
-        <key>Max Attribute Length</key>
-        <value>256</value>
+        <key>Command Arguments</key>
+        <value>${MasterAddress};${base_dir}/scripts/aws/read_worldwidebank_data.json</value>
     </entry>
 </properties>
 <runDurationMillis>0</runDurationMillis>
@@ -1385,9 +1385,9 @@
 <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
 <descriptors>
     <entry>
-        <key>Command Arguments</key>
+        <key>Max Attribute Length</key>
         <value>
-            <name>Command Arguments</name>
+            <name>Max Attribute Length</name>
         </value>
     </entry>
     <entry>
@@ -1397,21 +1397,9 @@
         </value>
     </entry>
     <entry>
-        <key>Ignore STDIN</key>
-        <value>
-            <name>Ignore STDIN</name>
-        </value>
-    </entry>
-    <entry>
         <key>Working Directory</key>
         <value>
             <name>Working Directory</name>
-        </value>
-    </entry>
-    <entry>
-        <key>Argument Delimiter</key>
-        <value>
-            <name>Argument Delimiter</name>
         </value>
     </entry>
     <entry>
@@ -1421,9 +1409,21 @@
         </value>
     </entry>
     <entry>
-        <key>Max Attribute Length</key>
+        <key>Argument Delimiter</key>
         <value>
-            <name>Max Attribute Length</name>
+            <name>Argument Delimiter</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Ignore STDIN</key>
+        <value>
+            <name>Ignore STDIN</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Command Arguments</key>
+        <value>
+            <name>Command Arguments</name>
         </value>
     </entry>
 </descriptors>
@@ -1432,30 +1432,30 @@
 <penaltyDuration>30 sec</penaltyDuration>
 <properties>
     <entry>
-        <key>Command Arguments</key>
-        <value>${base_dir}/scripts/aws/hdfs-site.xml;${base_dir}</value>
+        <key>Max Attribute Length</key>
+        <value>256</value>
     </entry>
     <entry>
         <key>Command Path</key>
         <value>${base_dir}/scripts/aws/add_by_hostname.sh</value>
     </entry>
     <entry>
-        <key>Ignore STDIN</key>
-        <value>false</value>
+        <key>Working Directory</key>
     </entry>
     <entry>
-        <key>Working Directory</key>
+        <key>Output Destination Attribute</key>
     </entry>
     <entry>
         <key>Argument Delimiter</key>
         <value>;</value>
     </entry>
     <entry>
-        <key>Output Destination Attribute</key>
+        <key>Ignore STDIN</key>
+        <value>false</value>
     </entry>
     <entry>
-        <key>Max Attribute Length</key>
-        <value>256</value>
+        <key>Command Arguments</key>
+        <value>${base_dir}/scripts/aws/hdfs-site.xml;${base_dir}</value>
     </entry>
 </properties>
 <runDurationMillis>0</runDurationMillis>
@@ -1561,9 +1561,9 @@
 <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
 <descriptors>
     <entry>
-        <key>Command Arguments</key>
+        <key>Max Attribute Length</key>
         <value>
-            <name>Command Arguments</name>
+            <name>Max Attribute Length</name>
         </value>
     </entry>
     <entry>
@@ -1573,21 +1573,9 @@
         </value>
     </entry>
     <entry>
-        <key>Ignore STDIN</key>
-        <value>
-            <name>Ignore STDIN</name>
-        </value>
-    </entry>
-    <entry>
         <key>Working Directory</key>
         <value>
             <name>Working Directory</name>
-        </value>
-    </entry>
-    <entry>
-        <key>Argument Delimiter</key>
-        <value>
-            <name>Argument Delimiter</name>
         </value>
     </entry>
     <entry>
@@ -1597,9 +1585,21 @@
         </value>
     </entry>
     <entry>
-        <key>Max Attribute Length</key>
+        <key>Argument Delimiter</key>
         <value>
-            <name>Max Attribute Length</name>
+            <name>Argument Delimiter</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Ignore STDIN</key>
+        <value>
+            <name>Ignore STDIN</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Command Arguments</key>
+        <value>
+            <name>Command Arguments</name>
         </value>
     </entry>
 </descriptors>
@@ -1608,30 +1608,30 @@
 <penaltyDuration>30 sec</penaltyDuration>
 <properties>
     <entry>
-        <key>Command Arguments</key>
-        <value>emr-orig-cluster-${now():toNumber()};${region};${log_uri};${key};${instanceprofile};${subnet};${slaveSG};${masterSG}</value>
+        <key>Max Attribute Length</key>
+        <value>256</value>
     </entry>
     <entry>
         <key>Command Path</key>
         <value>${base_dir}/scripts/aws/create_aws_cluster.sh</value>
     </entry>
     <entry>
-        <key>Ignore STDIN</key>
-        <value>false</value>
+        <key>Working Directory</key>
     </entry>
     <entry>
-        <key>Working Directory</key>
+        <key>Output Destination Attribute</key>
     </entry>
     <entry>
         <key>Argument Delimiter</key>
         <value>;</value>
     </entry>
     <entry>
-        <key>Output Destination Attribute</key>
+        <key>Ignore STDIN</key>
+        <value>false</value>
     </entry>
     <entry>
-        <key>Max Attribute Length</key>
-        <value>256</value>
+        <key>Command Arguments</key>
+        <value>emr-orig-cluster-${now():toNumber()};${region};${log_uri};${key};${instanceprofile};${subnet};${slaveSG};${masterSG}</value>
     </entry>
 </properties>
 <runDurationMillis>0</runDurationMillis>
@@ -1675,9 +1675,21 @@
 <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
 <descriptors>
     <entry>
+        <key>MasterAddress</key>
+        <value>
+            <name>MasterAddress</name>
+        </value>
+    </entry>
+    <entry>
         <key>Destination</key>
         <value>
             <name>Destination</name>
+        </value>
+    </entry>
+    <entry>
+        <key>State</key>
+        <value>
+            <name>State</name>
         </value>
     </entry>
     <entry>
@@ -1687,27 +1699,15 @@
         </value>
     </entry>
     <entry>
-        <key>Path Not Found Behavior</key>
-        <value>
-            <name>Path Not Found Behavior</name>
-        </value>
-    </entry>
-    <entry>
         <key>Null Value Representation</key>
         <value>
             <name>Null Value Representation</name>
         </value>
     </entry>
     <entry>
-        <key>MasterAddress</key>
+        <key>Path Not Found Behavior</key>
         <value>
-            <name>MasterAddress</name>
-        </value>
-    </entry>
-    <entry>
-        <key>State</key>
-        <value>
-            <name>State</name>
+            <name>Path Not Found Behavior</name>
         </value>
     </entry>
 </descriptors>
@@ -1716,28 +1716,28 @@
 <penaltyDuration>30 sec</penaltyDuration>
 <properties>
     <entry>
+        <key>MasterAddress</key>
+        <value>$.Cluster['MasterPublicDnsName']</value>
+    </entry>
+    <entry>
         <key>Destination</key>
         <value>flowfile-attribute</value>
+    </entry>
+    <entry>
+        <key>State</key>
+        <value>$.Cluster['Status'].State</value>
     </entry>
     <entry>
         <key>Return Type</key>
         <value>auto-detect</value>
     </entry>
     <entry>
-        <key>Path Not Found Behavior</key>
-        <value>ignore</value>
-    </entry>
-    <entry>
         <key>Null Value Representation</key>
         <value>empty string</value>
     </entry>
     <entry>
-        <key>MasterAddress</key>
-        <value>$.Cluster['MasterPublicDnsName']</value>
-    </entry>
-    <entry>
-        <key>State</key>
-        <value>$.Cluster['Status'].State</value>
+        <key>Path Not Found Behavior</key>
+        <value>ignore</value>
     </entry>
 </properties>
 <runDurationMillis>0</runDurationMillis>
@@ -1781,15 +1781,21 @@
 <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
 <descriptors>
     <entry>
-        <key>Merge Strategy</key>
+        <key>Keep Path</key>
         <value>
-            <name>Merge Strategy</name>
+            <name>Keep Path</name>
         </value>
     </entry>
     <entry>
-        <key>Merge Format</key>
+        <key>Maximum Group Size</key>
         <value>
-            <name>Merge Format</name>
+            <name>Maximum Group Size</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Merge Strategy</key>
+        <value>
+            <name>Merge Strategy</name>
         </value>
     </entry>
     <entry>
@@ -1799,21 +1805,9 @@
         </value>
     </entry>
     <entry>
-        <key>Correlation Attribute Name</key>
+        <key>Compression Level</key>
         <value>
-            <name>Correlation Attribute Name</name>
-        </value>
-    </entry>
-    <entry>
-        <key>mergecontent-metadata-strategy</key>
-        <value>
-            <name>mergecontent-metadata-strategy</name>
-        </value>
-    </entry>
-    <entry>
-        <key>Minimum Number of Entries</key>
-        <value>
-            <name>Minimum Number of Entries</name>
+            <name>Compression Level</name>
         </value>
     </entry>
     <entry>
@@ -1829,21 +1823,15 @@
         </value>
     </entry>
     <entry>
-        <key>Maximum Group Size</key>
-        <value>
-            <name>Maximum Group Size</name>
-        </value>
-    </entry>
-    <entry>
-        <key>Max Bin Age</key>
-        <value>
-            <name>Max Bin Age</name>
-        </value>
-    </entry>
-    <entry>
         <key>Maximum number of Bins</key>
         <value>
             <name>Maximum number of Bins</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Tar Modified Time</key>
+        <value>
+            <name>Tar Modified Time</name>
         </value>
     </entry>
     <entry>
@@ -1853,9 +1841,9 @@
         </value>
     </entry>
     <entry>
-        <key>Header File</key>
+        <key>Merge Format</key>
         <value>
-            <name>Header File</name>
+            <name>Merge Format</name>
         </value>
     </entry>
     <entry>
@@ -1865,27 +1853,39 @@
         </value>
     </entry>
     <entry>
+        <key>Max Bin Age</key>
+        <value>
+            <name>Max Bin Age</name>
+        </value>
+    </entry>
+    <entry>
         <key>Demarcator File</key>
         <value>
             <name>Demarcator File</name>
         </value>
     </entry>
     <entry>
-        <key>Compression Level</key>
+        <key>Correlation Attribute Name</key>
         <value>
-            <name>Compression Level</name>
+            <name>Correlation Attribute Name</name>
         </value>
     </entry>
     <entry>
-        <key>Keep Path</key>
+        <key>Header File</key>
         <value>
-            <name>Keep Path</name>
+            <name>Header File</name>
         </value>
     </entry>
     <entry>
-        <key>Tar Modified Time</key>
+        <key>mergecontent-metadata-strategy</key>
         <value>
-            <name>Tar Modified Time</name>
+            <name>mergecontent-metadata-strategy</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Minimum Number of Entries</key>
+        <value>
+            <name>Minimum Number of Entries</name>
         </value>
     </entry>
 </descriptors>
@@ -1894,27 +1894,23 @@
 <penaltyDuration>30 sec</penaltyDuration>
 <properties>
     <entry>
-        <key>Merge Strategy</key>
-        <value>Bin-Packing Algorithm</value>
+        <key>Keep Path</key>
+        <value>false</value>
     </entry>
     <entry>
-        <key>Merge Format</key>
-        <value>Binary Concatenation</value>
+        <key>Maximum Group Size</key>
+    </entry>
+    <entry>
+        <key>Merge Strategy</key>
+        <value>Bin-Packing Algorithm</value>
     </entry>
     <entry>
         <key>Attribute Strategy</key>
         <value>Keep Only Common Attributes</value>
     </entry>
     <entry>
-        <key>Correlation Attribute Name</key>
-    </entry>
-    <entry>
-        <key>mergecontent-metadata-strategy</key>
-        <value>Do Not Merge Uncommon Metadata</value>
-    </entry>
-    <entry>
-        <key>Minimum Number of Entries</key>
-        <value>2</value>
+        <key>Compression Level</key>
+        <value>1</value>
     </entry>
     <entry>
         <key>Maximum Number of Entries</key>
@@ -1925,39 +1921,43 @@
         <value>0 B</value>
     </entry>
     <entry>
-        <key>Maximum Group Size</key>
-    </entry>
-    <entry>
-        <key>Max Bin Age</key>
-    </entry>
-    <entry>
         <key>Maximum number of Bins</key>
         <value>5</value>
+    </entry>
+    <entry>
+        <key>Tar Modified Time</key>
+        <value>${file.lastModifiedTime}</value>
     </entry>
     <entry>
         <key>Delimiter Strategy</key>
         <value>Filename</value>
     </entry>
     <entry>
-        <key>Header File</key>
+        <key>Merge Format</key>
+        <value>Binary Concatenation</value>
     </entry>
     <entry>
         <key>Footer File</key>
     </entry>
     <entry>
+        <key>Max Bin Age</key>
+    </entry>
+    <entry>
         <key>Demarcator File</key>
     </entry>
     <entry>
-        <key>Compression Level</key>
-        <value>1</value>
+        <key>Correlation Attribute Name</key>
     </entry>
     <entry>
-        <key>Keep Path</key>
-        <value>false</value>
+        <key>Header File</key>
     </entry>
     <entry>
-        <key>Tar Modified Time</key>
-        <value>${file.lastModifiedTime}</value>
+        <key>mergecontent-metadata-strategy</key>
+        <value>Do Not Merge Uncommon Metadata</value>
+    </entry>
+    <entry>
+        <key>Minimum Number of Entries</key>
+        <value>2</value>
     </entry>
 </properties>
 <runDurationMillis>0</runDurationMillis>
@@ -2001,9 +2001,9 @@
 <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
 <descriptors>
     <entry>
-        <key>Command Arguments</key>
+        <key>Max Attribute Length</key>
         <value>
-            <name>Command Arguments</name>
+            <name>Max Attribute Length</name>
         </value>
     </entry>
     <entry>
@@ -2013,21 +2013,9 @@
         </value>
     </entry>
     <entry>
-        <key>Ignore STDIN</key>
-        <value>
-            <name>Ignore STDIN</name>
-        </value>
-    </entry>
-    <entry>
         <key>Working Directory</key>
         <value>
             <name>Working Directory</name>
-        </value>
-    </entry>
-    <entry>
-        <key>Argument Delimiter</key>
-        <value>
-            <name>Argument Delimiter</name>
         </value>
     </entry>
     <entry>
@@ -2037,9 +2025,21 @@
         </value>
     </entry>
     <entry>
-        <key>Max Attribute Length</key>
+        <key>Argument Delimiter</key>
         <value>
-            <name>Max Attribute Length</name>
+            <name>Argument Delimiter</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Ignore STDIN</key>
+        <value>
+            <name>Ignore STDIN</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Command Arguments</key>
+        <value>
+            <name>Command Arguments</name>
         </value>
     </entry>
 </descriptors>
@@ -2048,30 +2048,30 @@
 <penaltyDuration>30 sec</penaltyDuration>
 <properties>
     <entry>
-        <key>Command Arguments</key>
-        <value>${base_dir}/scripts/aws/core-site.xml;${base_dir}</value>
+        <key>Max Attribute Length</key>
+        <value>256</value>
     </entry>
     <entry>
         <key>Command Path</key>
         <value>${base_dir}/scripts/aws/comment_codecs.sh</value>
     </entry>
     <entry>
-        <key>Ignore STDIN</key>
-        <value>false</value>
+        <key>Working Directory</key>
     </entry>
     <entry>
-        <key>Working Directory</key>
+        <key>Output Destination Attribute</key>
     </entry>
     <entry>
         <key>Argument Delimiter</key>
         <value>;</value>
     </entry>
     <entry>
-        <key>Output Destination Attribute</key>
+        <key>Ignore STDIN</key>
+        <value>false</value>
     </entry>
     <entry>
-        <key>Max Attribute Length</key>
-        <value>256</value>
+        <key>Command Arguments</key>
+        <value>${base_dir}/scripts/aws/core-site.xml;${base_dir}</value>
     </entry>
 </properties>
 <runDurationMillis>0</runDurationMillis>
@@ -2115,9 +2115,15 @@
 <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
 <descriptors>
     <entry>
-        <key>Hostname</key>
+        <key>Proxy Host</key>
         <value>
-            <name>Hostname</name>
+            <name>Proxy Host</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Http Proxy Password</key>
+        <value>
+            <name>Http Proxy Password</name>
         </value>
     </entry>
     <entry>
@@ -2127,45 +2133,28 @@
         </value>
     </entry>
     <entry>
-        <key>Username</key>
-        <value>
-            <name>Username</name>
-        </value>
-    </entry>
-    <entry>
-        <key>Password</key>
-        <value>
-            <name>Password</name>
-        </value>
-    </entry>
-    <entry>
-        <key>Private Key Path</key>
-        <value>
-            <name>Private Key Path</name>
-        </value>
-    </entry>
-    <entry>
-        <key>Private Key Passphrase</key>
-        <value>
-            <name>Private Key Passphrase</name>
-        </value>
-    </entry>
-    <entry>
         <key>Remote File</key>
         <value>
             <name>Remote File</name>
         </value>
     </entry>
     <entry>
-        <key>Completion Strategy</key>
+        <key>proxy-configuration-service</key>
         <value>
-            <name>Completion Strategy</name>
+            <identifiesControllerService>org.apache.nifi.proxy.ProxyConfigurationService</identifiesControllerService>
+            <name>proxy-configuration-service</name>
         </value>
     </entry>
     <entry>
-        <key>Move Destination Directory</key>
+        <key>Http Proxy Username</key>
         <value>
-            <name>Move Destination Directory</name>
+            <name>Http Proxy Username</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Hostname</key>
+        <value>
+            <name>Hostname</name>
         </value>
     </entry>
     <entry>
@@ -2175,9 +2164,51 @@
         </value>
     </entry>
     <entry>
+        <key>Host Key File</key>
+        <value>
+            <name>Host Key File</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Use Compression</key>
+        <value>
+            <name>Use Compression</name>
+        </value>
+    </entry>
+    <entry>
         <key>Disable Directory Listing</key>
         <value>
             <name>Disable Directory Listing</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Send Keep Alive On Timeout</key>
+        <value>
+            <name>Send Keep Alive On Timeout</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Proxy Type</key>
+        <value>
+            <name>Proxy Type</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Completion Strategy</key>
+        <value>
+            <name>Completion Strategy</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Proxy Port</key>
+        <value>
+            <name>Proxy Port</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Private Key Passphrase</key>
+        <value>
+            <name>Private Key Passphrase</name>
         </value>
     </entry>
     <entry>
@@ -2193,15 +2224,21 @@
         </value>
     </entry>
     <entry>
-        <key>Send Keep Alive On Timeout</key>
+        <key>Private Key Path</key>
         <value>
-            <name>Send Keep Alive On Timeout</name>
+            <name>Private Key Path</name>
         </value>
     </entry>
     <entry>
-        <key>Host Key File</key>
+        <key>Username</key>
         <value>
-            <name>Host Key File</name>
+            <name>Username</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Move Destination Directory</key>
+        <value>
+            <name>Move Destination Directory</name>
         </value>
     </entry>
     <entry>
@@ -2211,46 +2248,9 @@
         </value>
     </entry>
     <entry>
-        <key>Use Compression</key>
+        <key>Password</key>
         <value>
-            <name>Use Compression</name>
-        </value>
-    </entry>
-    <entry>
-        <key>proxy-configuration-service</key>
-        <value>
-            <identifiesControllerService>org.apache.nifi.proxy.ProxyConfigurationService</identifiesControllerService>
-            <name>proxy-configuration-service</name>
-        </value>
-    </entry>
-    <entry>
-        <key>Proxy Type</key>
-        <value>
-            <name>Proxy Type</name>
-        </value>
-    </entry>
-    <entry>
-        <key>Proxy Host</key>
-        <value>
-            <name>Proxy Host</name>
-        </value>
-    </entry>
-    <entry>
-        <key>Proxy Port</key>
-        <value>
-            <name>Proxy Port</name>
-        </value>
-    </entry>
-    <entry>
-        <key>Http Proxy Username</key>
-        <value>
-            <name>Http Proxy Username</name>
-        </value>
-    </entry>
-    <entry>
-        <key>Http Proxy Password</key>
-        <value>
-            <name>Http Proxy Password</name>
+            <name>Password</name>
         </value>
     </entry>
 </descriptors>
@@ -2259,45 +2259,61 @@
 <penaltyDuration>30 sec</penaltyDuration>
 <properties>
     <entry>
-        <key>Hostname</key>
-        <value>${MasterAddress}</value>
+        <key>Proxy Host</key>
+    </entry>
+    <entry>
+        <key>Http Proxy Password</key>
     </entry>
     <entry>
         <key>Port</key>
         <value>22</value>
     </entry>
     <entry>
-        <key>Username</key>
-        <value>hadoop</value>
-    </entry>
-    <entry>
-        <key>Password</key>
-    </entry>
-    <entry>
-        <key>Private Key Path</key>
-        <value>${private_key_location}</value>
-    </entry>
-    <entry>
-        <key>Private Key Passphrase</key>
-    </entry>
-    <entry>
         <key>Remote File</key>
         <value>/etc/hadoop/conf.empty/core-site.xml</value>
     </entry>
     <entry>
-        <key>Completion Strategy</key>
-        <value>None</value>
+        <key>proxy-configuration-service</key>
     </entry>
     <entry>
-        <key>Move Destination Directory</key>
+        <key>Http Proxy Username</key>
+    </entry>
+    <entry>
+        <key>Hostname</key>
+        <value>${MasterAddress}</value>
     </entry>
     <entry>
         <key>Create Directory</key>
         <value>false</value>
     </entry>
     <entry>
+        <key>Host Key File</key>
+    </entry>
+    <entry>
+        <key>Use Compression</key>
+        <value>false</value>
+    </entry>
+    <entry>
         <key>Disable Directory Listing</key>
         <value>false</value>
+    </entry>
+    <entry>
+        <key>Send Keep Alive On Timeout</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>Proxy Type</key>
+        <value>DIRECT</value>
+    </entry>
+    <entry>
+        <key>Completion Strategy</key>
+        <value>None</value>
+    </entry>
+    <entry>
+        <key>Proxy Port</key>
+    </entry>
+    <entry>
+        <key>Private Key Passphrase</key>
     </entry>
     <entry>
         <key>Connection Timeout</key>
@@ -2308,38 +2324,22 @@
         <value>30 sec</value>
     </entry>
     <entry>
-        <key>Send Keep Alive On Timeout</key>
-        <value>true</value>
+        <key>Private Key Path</key>
+        <value>${private_key_location}</value>
     </entry>
     <entry>
-        <key>Host Key File</key>
+        <key>Username</key>
+        <value>hadoop</value>
+    </entry>
+    <entry>
+        <key>Move Destination Directory</key>
     </entry>
     <entry>
         <key>Strict Host Key Checking</key>
         <value>false</value>
     </entry>
     <entry>
-        <key>Use Compression</key>
-        <value>false</value>
-    </entry>
-    <entry>
-        <key>proxy-configuration-service</key>
-    </entry>
-    <entry>
-        <key>Proxy Type</key>
-        <value>DIRECT</value>
-    </entry>
-    <entry>
-        <key>Proxy Host</key>
-    </entry>
-    <entry>
-        <key>Proxy Port</key>
-    </entry>
-    <entry>
-        <key>Http Proxy Username</key>
-    </entry>
-    <entry>
-        <key>Http Proxy Password</key>
+        <key>Password</key>
     </entry>
 </properties>
 <runDurationMillis>0</runDurationMillis>
@@ -2387,9 +2387,9 @@
 <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
 <descriptors>
     <entry>
-        <key>Command Arguments</key>
+        <key>Max Attribute Length</key>
         <value>
-            <name>Command Arguments</name>
+            <name>Max Attribute Length</name>
         </value>
     </entry>
     <entry>
@@ -2399,21 +2399,9 @@
         </value>
     </entry>
     <entry>
-        <key>Ignore STDIN</key>
-        <value>
-            <name>Ignore STDIN</name>
-        </value>
-    </entry>
-    <entry>
         <key>Working Directory</key>
         <value>
             <name>Working Directory</name>
-        </value>
-    </entry>
-    <entry>
-        <key>Argument Delimiter</key>
-        <value>
-            <name>Argument Delimiter</name>
         </value>
     </entry>
     <entry>
@@ -2423,9 +2411,21 @@
         </value>
     </entry>
     <entry>
-        <key>Max Attribute Length</key>
+        <key>Argument Delimiter</key>
         <value>
-            <name>Max Attribute Length</name>
+            <name>Argument Delimiter</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Ignore STDIN</key>
+        <value>
+            <name>Ignore STDIN</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Command Arguments</key>
+        <value>
+            <name>Command Arguments</name>
         </value>
     </entry>
 </descriptors>
@@ -2434,30 +2434,30 @@
 <penaltyDuration>30 sec</penaltyDuration>
 <properties>
     <entry>
-        <key>Command Arguments</key>
-        <value>${ClusterId}</value>
+        <key>Max Attribute Length</key>
+        <value>256</value>
     </entry>
     <entry>
         <key>Command Path</key>
         <value>${base_dir}/scripts/aws/list_instances.sh</value>
     </entry>
     <entry>
-        <key>Ignore STDIN</key>
-        <value>false</value>
+        <key>Working Directory</key>
     </entry>
     <entry>
-        <key>Working Directory</key>
+        <key>Output Destination Attribute</key>
     </entry>
     <entry>
         <key>Argument Delimiter</key>
         <value>;</value>
     </entry>
     <entry>
-        <key>Output Destination Attribute</key>
+        <key>Ignore STDIN</key>
+        <value>false</value>
     </entry>
     <entry>
-        <key>Max Attribute Length</key>
-        <value>256</value>
+        <key>Command Arguments</key>
+        <value>${ClusterId}</value>
     </entry>
 </properties>
 <runDurationMillis>0</runDurationMillis>
@@ -2507,24 +2507,6 @@
         </value>
     </entry>
     <entry>
-        <key>Return Type</key>
-        <value>
-            <name>Return Type</name>
-        </value>
-    </entry>
-    <entry>
-        <key>Path Not Found Behavior</key>
-        <value>
-            <name>Path Not Found Behavior</name>
-        </value>
-    </entry>
-    <entry>
-        <key>Null Value Representation</key>
-        <value>
-            <name>Null Value Representation</name>
-        </value>
-    </entry>
-    <entry>
         <key>PrivateDnsName</key>
         <value>
             <name>PrivateDnsName</name>
@@ -2534,6 +2516,24 @@
         <key>PublicIp</key>
         <value>
             <name>PublicIp</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Return Type</key>
+        <value>
+            <name>Return Type</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Null Value Representation</key>
+        <value>
+            <name>Null Value Representation</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Path Not Found Behavior</key>
+        <value>
+            <name>Path Not Found Behavior</name>
         </value>
     </entry>
 </descriptors>
@@ -2546,24 +2546,24 @@
         <value>flowfile-attribute</value>
     </entry>
     <entry>
-        <key>Return Type</key>
-        <value>auto-detect</value>
-    </entry>
-    <entry>
-        <key>Path Not Found Behavior</key>
-        <value>ignore</value>
-    </entry>
-    <entry>
-        <key>Null Value Representation</key>
-        <value>empty string</value>
-    </entry>
-    <entry>
         <key>PrivateDnsName</key>
         <value>$.PrivateDnsName</value>
     </entry>
     <entry>
         <key>PublicIp</key>
         <value>$.PublicIpAddress</value>
+    </entry>
+    <entry>
+        <key>Return Type</key>
+        <value>auto-detect</value>
+    </entry>
+    <entry>
+        <key>Null Value Representation</key>
+        <value>empty string</value>
+    </entry>
+    <entry>
+        <key>Path Not Found Behavior</key>
+        <value>ignore</value>
     </entry>
 </properties>
 <runDurationMillis>0</runDurationMillis>
@@ -2607,9 +2607,9 @@
 <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
 <descriptors>
     <entry>
-        <key>Command Arguments</key>
+        <key>Max Attribute Length</key>
         <value>
-            <name>Command Arguments</name>
+            <name>Max Attribute Length</name>
         </value>
     </entry>
     <entry>
@@ -2619,21 +2619,9 @@
         </value>
     </entry>
     <entry>
-        <key>Ignore STDIN</key>
-        <value>
-            <name>Ignore STDIN</name>
-        </value>
-    </entry>
-    <entry>
         <key>Working Directory</key>
         <value>
             <name>Working Directory</name>
-        </value>
-    </entry>
-    <entry>
-        <key>Argument Delimiter</key>
-        <value>
-            <name>Argument Delimiter</name>
         </value>
     </entry>
     <entry>
@@ -2643,9 +2631,21 @@
         </value>
     </entry>
     <entry>
-        <key>Max Attribute Length</key>
+        <key>Argument Delimiter</key>
         <value>
-            <name>Max Attribute Length</name>
+            <name>Argument Delimiter</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Ignore STDIN</key>
+        <value>
+            <name>Ignore STDIN</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Command Arguments</key>
+        <value>
+            <name>Command Arguments</name>
         </value>
     </entry>
 </descriptors>
@@ -2654,30 +2654,30 @@
 <penaltyDuration>30 sec</penaltyDuration>
 <properties>
     <entry>
-        <key>Command Arguments</key>
-        <value>${ClusterId}</value>
+        <key>Max Attribute Length</key>
+        <value>256</value>
     </entry>
     <entry>
         <key>Command Path</key>
         <value>${base_dir}/scripts/aws/describe_cluster.sh</value>
     </entry>
     <entry>
-        <key>Ignore STDIN</key>
-        <value>false</value>
+        <key>Working Directory</key>
     </entry>
     <entry>
-        <key>Working Directory</key>
+        <key>Output Destination Attribute</key>
     </entry>
     <entry>
         <key>Argument Delimiter</key>
         <value>;</value>
     </entry>
     <entry>
-        <key>Output Destination Attribute</key>
+        <key>Ignore STDIN</key>
+        <value>false</value>
     </entry>
     <entry>
-        <key>Max Attribute Length</key>
-        <value>256</value>
+        <key>Command Arguments</key>
+        <value>${ClusterId}</value>
     </entry>
 </properties>
 <runDurationMillis>0</runDurationMillis>
@@ -2721,21 +2721,27 @@
 <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
 <descriptors>
     <entry>
-        <key>Directory</key>
+        <key>Group</key>
         <value>
-            <name>Directory</name>
+            <name>Group</name>
         </value>
     </entry>
     <entry>
-        <key>Conflict Resolution Strategy</key>
+        <key>Owner</key>
         <value>
-            <name>Conflict Resolution Strategy</name>
+            <name>Owner</name>
         </value>
     </entry>
     <entry>
         <key>Create Missing Directories</key>
         <value>
             <name>Create Missing Directories</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Permissions</key>
+        <value>
+            <name>Permissions</name>
         </value>
     </entry>
     <entry>
@@ -2751,21 +2757,15 @@
         </value>
     </entry>
     <entry>
-        <key>Permissions</key>
+        <key>Directory</key>
         <value>
-            <name>Permissions</name>
+            <name>Directory</name>
         </value>
     </entry>
     <entry>
-        <key>Owner</key>
+        <key>Conflict Resolution Strategy</key>
         <value>
-            <name>Owner</name>
-        </value>
-    </entry>
-    <entry>
-        <key>Group</key>
-        <value>
-            <name>Group</name>
+            <name>Conflict Resolution Strategy</name>
         </value>
     </entry>
 </descriptors>
@@ -2774,16 +2774,17 @@
 <penaltyDuration>30 sec</penaltyDuration>
 <properties>
     <entry>
-        <key>Directory</key>
-        <value>${base_dir}/scripts/aws/</value>
+        <key>Group</key>
     </entry>
     <entry>
-        <key>Conflict Resolution Strategy</key>
-        <value>replace</value>
+        <key>Owner</key>
     </entry>
     <entry>
         <key>Create Missing Directories</key>
         <value>true</value>
+    </entry>
+    <entry>
+        <key>Permissions</key>
     </entry>
     <entry>
         <key>Maximum File Count</key>
@@ -2792,13 +2793,12 @@
         <key>Last Modified Time</key>
     </entry>
     <entry>
-        <key>Permissions</key>
+        <key>Directory</key>
+        <value>${base_dir}/scripts/aws/</value>
     </entry>
     <entry>
-        <key>Owner</key>
-    </entry>
-    <entry>
-        <key>Group</key>
+        <key>Conflict Resolution Strategy</key>
+        <value>replace</value>
     </entry>
 </properties>
 <runDurationMillis>0</runDurationMillis>
@@ -2838,21 +2838,27 @@
 <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
 <descriptors>
     <entry>
-        <key>Directory</key>
+        <key>Group</key>
         <value>
-            <name>Directory</name>
+            <name>Group</name>
         </value>
     </entry>
     <entry>
-        <key>Conflict Resolution Strategy</key>
+        <key>Owner</key>
         <value>
-            <name>Conflict Resolution Strategy</name>
+            <name>Owner</name>
         </value>
     </entry>
     <entry>
         <key>Create Missing Directories</key>
         <value>
             <name>Create Missing Directories</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Permissions</key>
+        <value>
+            <name>Permissions</name>
         </value>
     </entry>
     <entry>
@@ -2868,21 +2874,15 @@
         </value>
     </entry>
     <entry>
-        <key>Permissions</key>
+        <key>Directory</key>
         <value>
-            <name>Permissions</name>
+            <name>Directory</name>
         </value>
     </entry>
     <entry>
-        <key>Owner</key>
+        <key>Conflict Resolution Strategy</key>
         <value>
-            <name>Owner</name>
-        </value>
-    </entry>
-    <entry>
-        <key>Group</key>
-        <value>
-            <name>Group</name>
+            <name>Conflict Resolution Strategy</name>
         </value>
     </entry>
 </descriptors>
@@ -2891,16 +2891,17 @@
 <penaltyDuration>30 sec</penaltyDuration>
 <properties>
     <entry>
-        <key>Directory</key>
-        <value>${base_dir}/scripts/aws/</value>
+        <key>Group</key>
     </entry>
     <entry>
-        <key>Conflict Resolution Strategy</key>
-        <value>replace</value>
+        <key>Owner</key>
     </entry>
     <entry>
         <key>Create Missing Directories</key>
         <value>true</value>
+    </entry>
+    <entry>
+        <key>Permissions</key>
     </entry>
     <entry>
         <key>Maximum File Count</key>
@@ -2909,13 +2910,12 @@
         <key>Last Modified Time</key>
     </entry>
     <entry>
-        <key>Permissions</key>
+        <key>Directory</key>
+        <value>${base_dir}/scripts/aws/</value>
     </entry>
     <entry>
-        <key>Owner</key>
-    </entry>
-    <entry>
-        <key>Group</key>
+        <key>Conflict Resolution Strategy</key>
+        <value>replace</value>
     </entry>
 </properties>
 <runDurationMillis>0</runDurationMillis>
@@ -2961,15 +2961,15 @@
         </value>
     </entry>
     <entry>
-        <key>Return Type</key>
+        <key>ClusterId</key>
         <value>
-            <name>Return Type</name>
+            <name>ClusterId</name>
         </value>
     </entry>
     <entry>
-        <key>Path Not Found Behavior</key>
+        <key>Return Type</key>
         <value>
-            <name>Path Not Found Behavior</name>
+            <name>Return Type</name>
         </value>
     </entry>
     <entry>
@@ -2979,9 +2979,9 @@
         </value>
     </entry>
     <entry>
-        <key>ClusterId</key>
+        <key>Path Not Found Behavior</key>
         <value>
-            <name>ClusterId</name>
+            <name>Path Not Found Behavior</name>
         </value>
     </entry>
 </descriptors>
@@ -2994,20 +2994,20 @@
         <value>flowfile-attribute</value>
     </entry>
     <entry>
-        <key>Return Type</key>
-        <value>auto-detect</value>
+        <key>ClusterId</key>
+        <value>$.ClusterId</value>
     </entry>
     <entry>
-        <key>Path Not Found Behavior</key>
-        <value>ignore</value>
+        <key>Return Type</key>
+        <value>auto-detect</value>
     </entry>
     <entry>
         <key>Null Value Representation</key>
         <value>empty string</value>
     </entry>
     <entry>
-        <key>ClusterId</key>
-        <value>$.ClusterId</value>
+        <key>Path Not Found Behavior</key>
+        <value>ignore</value>
     </entry>
 </properties>
 <runDurationMillis>0</runDurationMillis>
@@ -3051,15 +3051,15 @@
 <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
 <descriptors>
     <entry>
-        <key>JsonPath Expression</key>
-        <value>
-            <name>JsonPath Expression</name>
-        </value>
-    </entry>
-    <entry>
         <key>Null Value Representation</key>
         <value>
             <name>Null Value Representation</name>
+        </value>
+    </entry>
+    <entry>
+        <key>JsonPath Expression</key>
+        <value>
+            <name>JsonPath Expression</name>
         </value>
     </entry>
 </descriptors>
@@ -3068,12 +3068,12 @@
 <penaltyDuration>30 sec</penaltyDuration>
 <properties>
     <entry>
-        <key>JsonPath Expression</key>
-        <value>$.Instances</value>
-    </entry>
-    <entry>
         <key>Null Value Representation</key>
         <value>empty string</value>
+    </entry>
+    <entry>
+        <key>JsonPath Expression</key>
+        <value>$.Instances</value>
     </entry>
 </properties>
 <runDurationMillis>0</runDurationMillis>
@@ -3276,6 +3276,12 @@
 <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
 <descriptors>
     <entry>
+        <key>HDFS Filename</key>
+        <value>
+            <name>HDFS Filename</name>
+        </value>
+    </entry>
+    <entry>
         <key>Hadoop Configuration Resources</key>
         <value>
             <name>Hadoop Configuration Resources</name>
@@ -3289,21 +3295,9 @@
         </value>
     </entry>
     <entry>
-        <key>Kerberos Principal</key>
-        <value>
-            <name>Kerberos Principal</name>
-        </value>
-    </entry>
-    <entry>
         <key>Kerberos Keytab</key>
         <value>
             <name>Kerberos Keytab</name>
-        </value>
-    </entry>
-    <entry>
-        <key>Kerberos Relogin Period</key>
-        <value>
-            <name>Kerberos Relogin Period</name>
         </value>
     </entry>
     <entry>
@@ -3313,9 +3307,9 @@
         </value>
     </entry>
     <entry>
-        <key>HDFS Filename</key>
+        <key>Kerberos Principal</key>
         <value>
-            <name>HDFS Filename</name>
+            <name>Kerberos Principal</name>
         </value>
     </entry>
     <entry>
@@ -3324,11 +3318,21 @@
             <name>Compression codec</name>
         </value>
     </entry>
+    <entry>
+        <key>Kerberos Relogin Period</key>
+        <value>
+            <name>Kerberos Relogin Period</name>
+        </value>
+    </entry>
 </descriptors>
 <executionNode>ALL</executionNode>
 <lossTolerant>false</lossTolerant>
 <penaltyDuration>30 sec</penaltyDuration>
 <properties>
+    <entry>
+        <key>HDFS Filename</key>
+        <value>${path}/${filename}</value>
+    </entry>
     <entry>
         <key>Hadoop Configuration Resources</key>
         <value>${base_dir}/scripts/aws/hdfs-site.xml,${base_dir}/scripts/aws/core-site.xml</value>
@@ -3337,25 +3341,21 @@
         <key>kerberos-credentials-service</key>
     </entry>
     <entry>
-        <key>Kerberos Principal</key>
-    </entry>
-    <entry>
         <key>Kerberos Keytab</key>
-    </entry>
-    <entry>
-        <key>Kerberos Relogin Period</key>
-        <value>4 hours</value>
     </entry>
     <entry>
         <key>Additional Classpath Resources</key>
     </entry>
     <entry>
-        <key>HDFS Filename</key>
-        <value>${path}/${filename}</value>
+        <key>Kerberos Principal</key>
     </entry>
     <entry>
         <key>Compression codec</key>
         <value>NONE</value>
+    </entry>
+    <entry>
+        <key>Kerberos Relogin Period</key>
+        <value>4 hours</value>
     </entry>
 </properties>
 <runDurationMillis>0</runDurationMillis>
@@ -3399,27 +3399,51 @@
 <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
 <descriptors>
     <entry>
-        <key>Input Directory</key>
+        <key>Minimum File Age</key>
         <value>
-            <name>Input Directory</name>
+            <name>Minimum File Age</name>
         </value>
     </entry>
     <entry>
-        <key>listing-strategy</key>
+        <key>et-initial-listing-target</key>
         <value>
-            <name>listing-strategy</name>
+            <name>et-initial-listing-target</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Maximum File Age</key>
+        <value>
+            <name>Maximum File Age</name>
+        </value>
+    </entry>
+    <entry>
+        <key>max-listing-time</key>
+        <value>
+            <name>max-listing-time</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Maximum File Size</key>
+        <value>
+            <name>Maximum File Size</name>
+        </value>
+    </entry>
+    <entry>
+        <key>et-time-window</key>
+        <value>
+            <name>et-time-window</name>
+        </value>
+    </entry>
+    <entry>
+        <key>et-node-identifier</key>
+        <value>
+            <name>et-node-identifier</name>
         </value>
     </entry>
     <entry>
         <key>Recurse Subdirectories</key>
         <value>
             <name>Recurse Subdirectories</name>
-        </value>
-    </entry>
-    <entry>
-        <key>Input Directory Location</key>
-        <value>
-            <name>Input Directory Location</name>
         </value>
     </entry>
     <entry>
@@ -3441,64 +3465,27 @@
         </value>
     </entry>
     <entry>
-        <key>Minimum File Age</key>
+        <key>Input Directory Location</key>
         <value>
-            <name>Minimum File Age</name>
+            <name>Input Directory Location</name>
         </value>
     </entry>
     <entry>
-        <key>Maximum File Age</key>
+        <key>listing-strategy</key>
         <value>
-            <name>Maximum File Age</name>
+            <name>listing-strategy</name>
         </value>
     </entry>
     <entry>
-        <key>Minimum File Size</key>
+        <key>Input Directory</key>
         <value>
-            <name>Minimum File Size</name>
-        </value>
-    </entry>
-    <entry>
-        <key>Maximum File Size</key>
-        <value>
-            <name>Maximum File Size</name>
-        </value>
-    </entry>
-    <entry>
-        <key>Ignore Hidden Files</key>
-        <value>
-            <name>Ignore Hidden Files</name>
+            <name>Input Directory</name>
         </value>
     </entry>
     <entry>
         <key>target-system-timestamp-precision</key>
         <value>
             <name>target-system-timestamp-precision</name>
-        </value>
-    </entry>
-    <entry>
-        <key>et-state-cache</key>
-        <value>
-            <identifiesControllerService>org.apache.nifi.distributed.cache.client.DistributedMapCacheClient</identifiesControllerService>
-            <name>et-state-cache</name>
-        </value>
-    </entry>
-    <entry>
-        <key>et-time-window</key>
-        <value>
-            <name>et-time-window</name>
-        </value>
-    </entry>
-    <entry>
-        <key>et-initial-listing-target</key>
-        <value>
-            <name>et-initial-listing-target</name>
-        </value>
-    </entry>
-    <entry>
-        <key>et-node-identifier</key>
-        <value>
-            <name>et-node-identifier</name>
         </value>
     </entry>
     <entry>
@@ -3514,15 +3501,28 @@
         </value>
     </entry>
     <entry>
-        <key>max-operation-time</key>
+        <key>Minimum File Size</key>
         <value>
-            <name>max-operation-time</name>
+            <name>Minimum File Size</name>
         </value>
     </entry>
     <entry>
-        <key>max-listing-time</key>
+        <key>Ignore Hidden Files</key>
         <value>
-            <name>max-listing-time</name>
+            <name>Ignore Hidden Files</name>
+        </value>
+    </entry>
+    <entry>
+        <key>et-state-cache</key>
+        <value>
+            <identifiesControllerService>org.apache.nifi.distributed.cache.client.DistributedMapCacheClient</identifiesControllerService>
+            <name>et-state-cache</name>
+        </value>
+    </entry>
+    <entry>
+        <key>max-operation-time</key>
+        <value>
+            <name>max-operation-time</name>
         </value>
     </entry>
 </descriptors>
@@ -3531,20 +3531,34 @@
 <penaltyDuration>30 sec</penaltyDuration>
 <properties>
     <entry>
-        <key>Input Directory</key>
-        <value>${base_dir}/data/emr/raw</value>
+        <key>Minimum File Age</key>
+        <value>0 sec</value>
     </entry>
     <entry>
-        <key>listing-strategy</key>
-        <value>timestamps</value>
+        <key>et-initial-listing-target</key>
+        <value>all</value>
+    </entry>
+    <entry>
+        <key>Maximum File Age</key>
+    </entry>
+    <entry>
+        <key>max-listing-time</key>
+        <value>3 mins</value>
+    </entry>
+    <entry>
+        <key>Maximum File Size</key>
+    </entry>
+    <entry>
+        <key>et-time-window</key>
+        <value>3 hours</value>
+    </entry>
+    <entry>
+        <key>et-node-identifier</key>
+        <value>${hostname()}</value>
     </entry>
     <entry>
         <key>Recurse Subdirectories</key>
         <value>true</value>
-    </entry>
-    <entry>
-        <key>Input Directory Location</key>
-        <value>Local</value>
     </entry>
     <entry>
         <key>File Filter</key>
@@ -3558,41 +3572,20 @@
         <value>true</value>
     </entry>
     <entry>
-        <key>Minimum File Age</key>
-        <value>0 sec</value>
+        <key>Input Directory Location</key>
+        <value>Local</value>
     </entry>
     <entry>
-        <key>Maximum File Age</key>
+        <key>listing-strategy</key>
+        <value>timestamps</value>
     </entry>
     <entry>
-        <key>Minimum File Size</key>
-        <value>0 B</value>
-    </entry>
-    <entry>
-        <key>Maximum File Size</key>
-    </entry>
-    <entry>
-        <key>Ignore Hidden Files</key>
-        <value>true</value>
+        <key>Input Directory</key>
+        <value>${base_dir}/data/emr/raw</value>
     </entry>
     <entry>
         <key>target-system-timestamp-precision</key>
         <value>auto-detect</value>
-    </entry>
-    <entry>
-        <key>et-state-cache</key>
-    </entry>
-    <entry>
-        <key>et-time-window</key>
-        <value>3 hours</value>
-    </entry>
-    <entry>
-        <key>et-initial-listing-target</key>
-        <value>all</value>
-    </entry>
-    <entry>
-        <key>et-node-identifier</key>
-        <value>${hostname()}</value>
     </entry>
     <entry>
         <key>track-performance</key>
@@ -3603,12 +3596,19 @@
         <value>100000</value>
     </entry>
     <entry>
-        <key>max-operation-time</key>
-        <value>10 secs</value>
+        <key>Minimum File Size</key>
+        <value>0 B</value>
     </entry>
     <entry>
-        <key>max-listing-time</key>
-        <value>3 mins</value>
+        <key>Ignore Hidden Files</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>et-state-cache</key>
+    </entry>
+    <entry>
+        <key>max-operation-time</key>
+        <value>10 secs</value>
     </entry>
 </properties>
 <runDurationMillis>0</runDurationMillis>
@@ -3644,9 +3644,9 @@
 <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
 <descriptors>
     <entry>
-        <key>Command Arguments</key>
+        <key>Max Attribute Length</key>
         <value>
-            <name>Command Arguments</name>
+            <name>Max Attribute Length</name>
         </value>
     </entry>
     <entry>
@@ -3656,21 +3656,9 @@
         </value>
     </entry>
     <entry>
-        <key>Ignore STDIN</key>
-        <value>
-            <name>Ignore STDIN</name>
-        </value>
-    </entry>
-    <entry>
         <key>Working Directory</key>
         <value>
             <name>Working Directory</name>
-        </value>
-    </entry>
-    <entry>
-        <key>Argument Delimiter</key>
-        <value>
-            <name>Argument Delimiter</name>
         </value>
     </entry>
     <entry>
@@ -3680,9 +3668,21 @@
         </value>
     </entry>
     <entry>
-        <key>Max Attribute Length</key>
+        <key>Argument Delimiter</key>
         <value>
-            <name>Max Attribute Length</name>
+            <name>Argument Delimiter</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Ignore STDIN</key>
+        <value>
+            <name>Ignore STDIN</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Command Arguments</key>
+        <value>
+            <name>Command Arguments</name>
         </value>
     </entry>
 </descriptors>
@@ -3691,30 +3691,30 @@
 <penaltyDuration>30 sec</penaltyDuration>
 <properties>
     <entry>
-        <key>Command Arguments</key>
-        <value>${base_dir}/data/emr/;${filename}</value>
+        <key>Max Attribute Length</key>
+        <value>256</value>
     </entry>
     <entry>
         <key>Command Path</key>
         <value>${base_dir}/scripts/wxm/compress_log.sh</value>
     </entry>
     <entry>
-        <key>Ignore STDIN</key>
-        <value>false</value>
+        <key>Working Directory</key>
     </entry>
     <entry>
-        <key>Working Directory</key>
+        <key>Output Destination Attribute</key>
     </entry>
     <entry>
         <key>Argument Delimiter</key>
         <value>;</value>
     </entry>
     <entry>
-        <key>Output Destination Attribute</key>
+        <key>Ignore STDIN</key>
+        <value>false</value>
     </entry>
     <entry>
-        <key>Max Attribute Length</key>
-        <value>256</value>
+        <key>Command Arguments</key>
+        <value>${base_dir}/data/emr/;${filename}</value>
     </entry>
 </properties>
 <runDurationMillis>0</runDurationMillis>
@@ -3758,21 +3758,27 @@
 <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
 <descriptors>
     <entry>
-        <key>Directory</key>
+        <key>Group</key>
         <value>
-            <name>Directory</name>
+            <name>Group</name>
         </value>
     </entry>
     <entry>
-        <key>Conflict Resolution Strategy</key>
+        <key>Owner</key>
         <value>
-            <name>Conflict Resolution Strategy</name>
+            <name>Owner</name>
         </value>
     </entry>
     <entry>
         <key>Create Missing Directories</key>
         <value>
             <name>Create Missing Directories</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Permissions</key>
+        <value>
+            <name>Permissions</name>
         </value>
     </entry>
     <entry>
@@ -3788,21 +3794,15 @@
         </value>
     </entry>
     <entry>
-        <key>Permissions</key>
+        <key>Directory</key>
         <value>
-            <name>Permissions</name>
+            <name>Directory</name>
         </value>
     </entry>
     <entry>
-        <key>Owner</key>
+        <key>Conflict Resolution Strategy</key>
         <value>
-            <name>Owner</name>
-        </value>
-    </entry>
-    <entry>
-        <key>Group</key>
-        <value>
-            <name>Group</name>
+            <name>Conflict Resolution Strategy</name>
         </value>
     </entry>
 </descriptors>
@@ -3811,16 +3811,17 @@
 <penaltyDuration>30 sec</penaltyDuration>
 <properties>
     <entry>
-        <key>Directory</key>
-        <value>${base_dir}/data/emr/raw</value>
+        <key>Group</key>
     </entry>
     <entry>
-        <key>Conflict Resolution Strategy</key>
-        <value>fail</value>
+        <key>Owner</key>
     </entry>
     <entry>
         <key>Create Missing Directories</key>
         <value>true</value>
+    </entry>
+    <entry>
+        <key>Permissions</key>
     </entry>
     <entry>
         <key>Maximum File Count</key>
@@ -3829,13 +3830,12 @@
         <key>Last Modified Time</key>
     </entry>
     <entry>
-        <key>Permissions</key>
+        <key>Directory</key>
+        <value>${base_dir}/data/emr/raw</value>
     </entry>
     <entry>
-        <key>Owner</key>
-    </entry>
-    <entry>
-        <key>Group</key>
+        <key>Conflict Resolution Strategy</key>
+        <value>fail</value>
     </entry>
 </properties>
 <runDurationMillis>0</runDurationMillis>
@@ -3875,9 +3875,9 @@
 <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
 <descriptors>
     <entry>
-        <key>Command Arguments</key>
+        <key>Max Attribute Length</key>
         <value>
-            <name>Command Arguments</name>
+            <name>Max Attribute Length</name>
         </value>
     </entry>
     <entry>
@@ -3887,21 +3887,9 @@
         </value>
     </entry>
     <entry>
-        <key>Ignore STDIN</key>
-        <value>
-            <name>Ignore STDIN</name>
-        </value>
-    </entry>
-    <entry>
         <key>Working Directory</key>
         <value>
             <name>Working Directory</name>
-        </value>
-    </entry>
-    <entry>
-        <key>Argument Delimiter</key>
-        <value>
-            <name>Argument Delimiter</name>
         </value>
     </entry>
     <entry>
@@ -3911,9 +3899,21 @@
         </value>
     </entry>
     <entry>
-        <key>Max Attribute Length</key>
+        <key>Argument Delimiter</key>
         <value>
-            <name>Max Attribute Length</name>
+            <name>Argument Delimiter</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Ignore STDIN</key>
+        <value>
+            <name>Ignore STDIN</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Command Arguments</key>
+        <value>
+            <name>Command Arguments</name>
         </value>
     </entry>
 </descriptors>
@@ -3922,30 +3922,30 @@
 <penaltyDuration>30 sec</penaltyDuration>
 <properties>
     <entry>
-        <key>Command Arguments</key>
-        <value>${wxm_cluster_name};${filename}.tar.gz;${base_dir}/data/emr/compressed</value>
+        <key>Max Attribute Length</key>
+        <value>256</value>
     </entry>
     <entry>
         <key>Command Path</key>
         <value>${base_dir}/scripts/wxm/upload_to_wxm.sh</value>
     </entry>
     <entry>
-        <key>Ignore STDIN</key>
-        <value>false</value>
+        <key>Working Directory</key>
     </entry>
     <entry>
-        <key>Working Directory</key>
+        <key>Output Destination Attribute</key>
     </entry>
     <entry>
         <key>Argument Delimiter</key>
         <value>;</value>
     </entry>
     <entry>
-        <key>Output Destination Attribute</key>
+        <key>Ignore STDIN</key>
+        <value>false</value>
     </entry>
     <entry>
-        <key>Max Attribute Length</key>
-        <value>256</value>
+        <key>Command Arguments</key>
+        <value>${wxm_cluster_name};${filename}.tar.gz;${base_dir}/data/emr/compressed</value>
     </entry>
 </properties>
 <runDurationMillis>0</runDurationMillis>
@@ -3995,28 +3995,9 @@
         </value>
     </entry>
     <entry>
-        <key>kerberos-credentials-service</key>
+        <key>maximum-file-age</key>
         <value>
-            <identifiesControllerService>org.apache.nifi.kerberos.KerberosCredentialsService</identifiesControllerService>
-            <name>kerberos-credentials-service</name>
-        </value>
-    </entry>
-    <entry>
-        <key>Kerberos Principal</key>
-        <value>
-            <name>Kerberos Principal</name>
-        </value>
-    </entry>
-    <entry>
-        <key>Kerberos Keytab</key>
-        <value>
-            <name>Kerberos Keytab</name>
-        </value>
-    </entry>
-    <entry>
-        <key>Kerberos Relogin Period</key>
-        <value>
-            <name>Kerberos Relogin Period</name>
+            <name>maximum-file-age</name>
         </value>
     </entry>
     <entry>
@@ -4033,21 +4014,9 @@
         </value>
     </entry>
     <entry>
-        <key>Directory</key>
-        <value>
-            <name>Directory</name>
-        </value>
-    </entry>
-    <entry>
         <key>Recurse Subdirectories</key>
         <value>
             <name>Recurse Subdirectories</name>
-        </value>
-    </entry>
-    <entry>
-        <key>File Filter</key>
-        <value>
-            <name>File Filter</name>
         </value>
     </entry>
     <entry>
@@ -4057,15 +4026,46 @@
         </value>
     </entry>
     <entry>
+        <key>File Filter</key>
+        <value>
+            <name>File Filter</name>
+        </value>
+    </entry>
+    <entry>
+        <key>kerberos-credentials-service</key>
+        <value>
+            <identifiesControllerService>org.apache.nifi.kerberos.KerberosCredentialsService</identifiesControllerService>
+            <name>kerberos-credentials-service</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Kerberos Keytab</key>
+        <value>
+            <name>Kerberos Keytab</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Kerberos Principal</key>
+        <value>
+            <name>Kerberos Principal</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Kerberos Relogin Period</key>
+        <value>
+            <name>Kerberos Relogin Period</name>
+        </value>
+    </entry>
+    <entry>
         <key>minimum-file-age</key>
         <value>
             <name>minimum-file-age</name>
         </value>
     </entry>
     <entry>
-        <key>maximum-file-age</key>
+        <key>Directory</key>
         <value>
-            <name>maximum-file-age</name>
+            <name>Directory</name>
         </value>
     </entry>
 </descriptors>
@@ -4078,17 +4078,7 @@
         <value>${base_dir}/scripts/aws/hdfs-site.xml,${base_dir}/scripts/aws/core-site.xml</value>
     </entry>
     <entry>
-        <key>kerberos-credentials-service</key>
-    </entry>
-    <entry>
-        <key>Kerberos Principal</key>
-    </entry>
-    <entry>
-        <key>Kerberos Keytab</key>
-    </entry>
-    <entry>
-        <key>Kerberos Relogin Period</key>
-        <value>4 hours</value>
+        <key>maximum-file-age</key>
     </entry>
     <entry>
         <key>Additional Classpath Resources</key>
@@ -4097,26 +4087,36 @@
         <key>Distributed Cache Service</key>
     </entry>
     <entry>
-        <key>Directory</key>
-        <value>/nifi/</value>
-    </entry>
-    <entry>
         <key>Recurse Subdirectories</key>
         <value>true</value>
-    </entry>
-    <entry>
-        <key>File Filter</key>
-        <value>[^\.].*</value>
     </entry>
     <entry>
         <key>file-filter-mode</key>
         <value>filter-mode-directories-and-files</value>
     </entry>
     <entry>
+        <key>File Filter</key>
+        <value>[^\.].*</value>
+    </entry>
+    <entry>
+        <key>kerberos-credentials-service</key>
+    </entry>
+    <entry>
+        <key>Kerberos Keytab</key>
+    </entry>
+    <entry>
+        <key>Kerberos Principal</key>
+    </entry>
+    <entry>
+        <key>Kerberos Relogin Period</key>
+        <value>4 hours</value>
+    </entry>
+    <entry>
         <key>minimum-file-age</key>
     </entry>
     <entry>
-        <key>maximum-file-age</key>
+        <key>Directory</key>
+        <value>/nifi/</value>
     </entry>
 </properties>
 <runDurationMillis>0</runDurationMillis>
@@ -4184,5 +4184,5 @@
             </variables>
         </processGroups>
     </snippet>
-    <timestamp>09/17/2019 07:23:42 PDT</timestamp>
+    <timestamp>09/17/2019 10:23:42 EDT</timestamp>
 </template>

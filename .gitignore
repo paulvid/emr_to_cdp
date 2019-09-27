@@ -9,3 +9,4 @@ scripts/wxm/altus.json
 scripts/wxm/uploader.tar
 data/emr/raw/*
 data/emr/compressed/*
+data/emr/altus.json

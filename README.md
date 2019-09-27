@@ -39,7 +39,7 @@ cp [local_path]/altus.json [local_path_to_clone]/scripts/wxm/
 cp [local_path]/uploader.tar [local_path_to_clone]/scripts/wxm/
 ```
 
-* Upload worldwidebank data to S3 bucket
+* Upload worldwidebank data to S3 bucket (follow the same directory structure)
 
 ### 3. Configure nifi
 
