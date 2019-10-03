@@ -157,6 +157,56 @@
                             <zIndex>0</zIndex>
                         </connections>
                         <connections>
+                            <id>1674b817-d09d-3862-0000-000000000000</id>
+                            <parentGroupId>21b094dd-f4a6-32b8-0000-000000000000</parentGroupId>
+                            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                            <destination>
+<groupId>21b094dd-f4a6-32b8-0000-000000000000</groupId>
+<id>ab28c37a-c516-30a8-0000-000000000000</id>
+<type>FUNNEL</type>
+                            </destination>
+                            <flowFileExpiration>0 sec</flowFileExpiration>
+                            <labelIndex>1</labelIndex>
+                            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                            <name></name>
+                            <selectedRelationships>original</selectedRelationships>
+                            <source>
+<groupId>21b094dd-f4a6-32b8-0000-000000000000</groupId>
+<id>1f8730fa-5032-3dde-0000-000000000000</id>
+<type>PROCESSOR</type>
+                            </source>
+                            <zIndex>0</zIndex>
+                        </connections>
+                        <connections>
+                            <id>3222464f-0f64-3d45-0000-000000000000</id>
+                            <parentGroupId>21b094dd-f4a6-32b8-0000-000000000000</parentGroupId>
+                            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                            <destination>
+<groupId>21b094dd-f4a6-32b8-0000-000000000000</groupId>
+<id>eb31affb-55ee-344a-0000-000000000000</id>
+<type>PROCESSOR</type>
+                            </destination>
+                            <flowFileExpiration>0 sec</flowFileExpiration>
+                            <labelIndex>1</labelIndex>
+                            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                            <name></name>
+                            <selectedRelationships>merged</selectedRelationships>
+                            <source>
+<groupId>21b094dd-f4a6-32b8-0000-000000000000</groupId>
+<id>cc1fa14e-562d-3460-0000-000000000000</id>
+<type>PROCESSOR</type>
+                            </source>
+                            <zIndex>0</zIndex>
+                        </connections>
+                        <connections>
                             <id>42abea86-c1b7-343d-0000-000000000000</id>
                             <parentGroupId>21b094dd-f4a6-32b8-0000-000000000000</parentGroupId>
                             <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
@@ -377,6 +427,31 @@
                             <source>
 <groupId>21b094dd-f4a6-32b8-0000-000000000000</groupId>
 <id>d9a19e95-9c52-36dc-0000-000000000000</id>
+<type>PROCESSOR</type>
+                            </source>
+                            <zIndex>0</zIndex>
+                        </connections>
+                        <connections>
+                            <id>96f4a362-f422-3e95-0000-000000000000</id>
+                            <parentGroupId>21b094dd-f4a6-32b8-0000-000000000000</parentGroupId>
+                            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                            <destination>
+<groupId>21b094dd-f4a6-32b8-0000-000000000000</groupId>
+<id>ab28c37a-c516-30a8-0000-000000000000</id>
+<type>FUNNEL</type>
+                            </destination>
+                            <flowFileExpiration>0 sec</flowFileExpiration>
+                            <labelIndex>1</labelIndex>
+                            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                            <name></name>
+                            <selectedRelationships>original</selectedRelationships>
+                            <source>
+<groupId>21b094dd-f4a6-32b8-0000-000000000000</groupId>
+<id>b2e923e7-d7f9-39d3-0000-000000000000</id>
 <type>PROCESSOR</type>
                             </source>
                             <zIndex>0</zIndex>
@@ -606,6 +681,30 @@
                             <zIndex>0</zIndex>
                         </connections>
                         <connections>
+                            <id>fb6bb8f3-ecec-3764-0000-000000000000</id>
+                            <parentGroupId>21b094dd-f4a6-32b8-0000-000000000000</parentGroupId>
+                            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                            <destination>
+<groupId>21b094dd-f4a6-32b8-0000-000000000000</groupId>
+<id>cc1fa14e-562d-3460-0000-000000000000</id>
+<type>PROCESSOR</type>
+                            </destination>
+                            <flowFileExpiration>0 sec</flowFileExpiration>
+                            <labelIndex>1</labelIndex>
+                            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                            <name></name>
+                            <source>
+<groupId>21b094dd-f4a6-32b8-0000-000000000000</groupId>
+<id>ab28c37a-c516-30a8-0000-000000000000</id>
+<type>FUNNEL</type>
+                            </source>
+                            <zIndex>0</zIndex>
+                        </connections>
+                        <connections>
                             <id>fc3c8666-1877-3eb4-0000-000000000000</id>
                             <parentGroupId>21b094dd-f4a6-32b8-0000-000000000000</parentGroupId>
                             <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
@@ -663,6 +762,14 @@
 <y>1295.925167607079</y>
                             </position>
                         </funnels>
+                        <funnels>
+                            <id>ab28c37a-c516-30a8-0000-000000000000</id>
+                            <parentGroupId>21b094dd-f4a6-32b8-0000-000000000000</parentGroupId>
+                            <position>
+<x>915.3066658076923</x>
+<y>1563.267808388825</y>
+                            </position>
+                        </funnels>
                         <labels>
                             <id>373a52a1-828f-3815-0000-000000000000</id>
                             <parentGroupId>21b094dd-f4a6-32b8-0000-000000000000</parentGroupId>
@@ -670,7 +777,7 @@
 <x>-631.9265943361393</x>
 <y>589.0491220781273</y>
                             </position>
-                            <height>1061.5955657958984</height>
+                            <height>1064.663558959961</height>
                             <label>Loads Cluster Config</label>
                             <style>
 <entry>
@@ -678,7 +785,7 @@
     <value>18px</value>
 </entry>
                             </style>
-                            <width>1673.7925109863281</width>
+                            <width>2195.358428955078</width>
                         </labels>
                         <labels>
                             <id>3885500f-cae1-3e8e-0000-000000000000</id>
@@ -1254,7 +1361,7 @@
 <name>nonzero status</name>
                             </relationships>
                             <relationships>
-<autoTerminate>true</autoTerminate>
+<autoTerminate>false</autoTerminate>
 <name>original</name>
                             </relationships>
                             <relationships>
@@ -2581,7 +2688,7 @@
 <name>nonzero status</name>
                             </relationships>
                             <relationships>
-<autoTerminate>true</autoTerminate>
+<autoTerminate>false</autoTerminate>
 <name>original</name>
                             </relationships>
                             <relationships>
@@ -3430,6 +3537,226 @@
                             <type>org.apache.nifi.processors.standard.PutFile</type>
                         </processors>
                         <processors>
+                            <id>cc1fa14e-562d-3460-0000-000000000000</id>
+                            <parentGroupId>21b094dd-f4a6-32b8-0000-000000000000</parentGroupId>
+                            <position>
+<x>1124.7710784451815</x>
+<y>1499.7539691498312</y>
+                            </position>
+                            <bundle>
+<artifact>nifi-standard-nar</artifact>
+<group>org.apache.nifi</group>
+<version>1.9.0</version>
+                            </bundle>
+                            <config>
+<bulletinLevel>WARN</bulletinLevel>
+<comments></comments>
+<concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+<descriptors>
+    <entry>
+        <key>Merge Strategy</key>
+        <value>
+            <name>Merge Strategy</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Merge Format</key>
+        <value>
+            <name>Merge Format</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Attribute Strategy</key>
+        <value>
+            <name>Attribute Strategy</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Correlation Attribute Name</key>
+        <value>
+            <name>Correlation Attribute Name</name>
+        </value>
+    </entry>
+    <entry>
+        <key>mergecontent-metadata-strategy</key>
+        <value>
+            <name>mergecontent-metadata-strategy</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Minimum Number of Entries</key>
+        <value>
+            <name>Minimum Number of Entries</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Maximum Number of Entries</key>
+        <value>
+            <name>Maximum Number of Entries</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Minimum Group Size</key>
+        <value>
+            <name>Minimum Group Size</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Maximum Group Size</key>
+        <value>
+            <name>Maximum Group Size</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Max Bin Age</key>
+        <value>
+            <name>Max Bin Age</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Maximum number of Bins</key>
+        <value>
+            <name>Maximum number of Bins</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Delimiter Strategy</key>
+        <value>
+            <name>Delimiter Strategy</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Header File</key>
+        <value>
+            <name>Header File</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Footer File</key>
+        <value>
+            <name>Footer File</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Demarcator File</key>
+        <value>
+            <name>Demarcator File</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Compression Level</key>
+        <value>
+            <name>Compression Level</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Keep Path</key>
+        <value>
+            <name>Keep Path</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Tar Modified Time</key>
+        <value>
+            <name>Tar Modified Time</name>
+        </value>
+    </entry>
+</descriptors>
+<executionNode>ALL</executionNode>
+<lossTolerant>false</lossTolerant>
+<penaltyDuration>30 sec</penaltyDuration>
+<properties>
+    <entry>
+        <key>Merge Strategy</key>
+        <value>Bin-Packing Algorithm</value>
+    </entry>
+    <entry>
+        <key>Merge Format</key>
+        <value>Binary Concatenation</value>
+    </entry>
+    <entry>
+        <key>Attribute Strategy</key>
+        <value>Keep Only Common Attributes</value>
+    </entry>
+    <entry>
+        <key>Correlation Attribute Name</key>
+    </entry>
+    <entry>
+        <key>mergecontent-metadata-strategy</key>
+        <value>Do Not Merge Uncommon Metadata</value>
+    </entry>
+    <entry>
+        <key>Minimum Number of Entries</key>
+        <value>2</value>
+    </entry>
+    <entry>
+        <key>Maximum Number of Entries</key>
+        <value>1000</value>
+    </entry>
+    <entry>
+        <key>Minimum Group Size</key>
+        <value>0 B</value>
+    </entry>
+    <entry>
+        <key>Maximum Group Size</key>
+    </entry>
+    <entry>
+        <key>Max Bin Age</key>
+    </entry>
+    <entry>
+        <key>Maximum number of Bins</key>
+        <value>5</value>
+    </entry>
+    <entry>
+        <key>Delimiter Strategy</key>
+        <value>Filename</value>
+    </entry>
+    <entry>
+        <key>Header File</key>
+    </entry>
+    <entry>
+        <key>Footer File</key>
+    </entry>
+    <entry>
+        <key>Demarcator File</key>
+    </entry>
+    <entry>
+        <key>Compression Level</key>
+        <value>1</value>
+    </entry>
+    <entry>
+        <key>Keep Path</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>Tar Modified Time</key>
+        <value>${file.lastModifiedTime}</value>
+    </entry>
+</properties>
+<runDurationMillis>0</runDurationMillis>
+<schedulingPeriod>0 sec</schedulingPeriod>
+<schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+<yieldDuration>1 sec</yieldDuration>
+                            </config>
+                            <executionNodeRestricted>false</executionNodeRestricted>
+                            <name>MergeContent</name>
+                            <relationships>
+<autoTerminate>true</autoTerminate>
+<name>failure</name>
+                            </relationships>
+                            <relationships>
+<autoTerminate>false</autoTerminate>
+<name>merged</name>
+                            </relationships>
+                            <relationships>
+<autoTerminate>true</autoTerminate>
+<name>original</name>
+                            </relationships>
+                            <state>STOPPED</state>
+                            <style/>
+                            <type>org.apache.nifi.processors.standard.MergeContent</type>
+                        </processors>
+                        <processors>
                             <id>d9a19e95-9c52-36dc-0000-000000000000</id>
                             <parentGroupId>21b094dd-f4a6-32b8-0000-000000000000</parentGroupId>
                             <position>
@@ -3708,6 +4035,120 @@
                             <style/>
                             <type>org.apache.nifi.processors.standard.SplitJson</type>
                         </processors>
+                        <processors>
+                            <id>eb31affb-55ee-344a-0000-000000000000</id>
+                            <parentGroupId>21b094dd-f4a6-32b8-0000-000000000000</parentGroupId>
+                            <position>
+<x>1114.0842261402174</x>
+<y>1226.2133655110626</y>
+                            </position>
+                            <bundle>
+<artifact>nifi-standard-nar</artifact>
+<group>org.apache.nifi</group>
+<version>1.9.0</version>
+                            </bundle>
+                            <config>
+<bulletinLevel>WARN</bulletinLevel>
+<comments></comments>
+<concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+<descriptors>
+    <entry>
+        <key>Command Arguments</key>
+        <value>
+            <name>Command Arguments</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Command Path</key>
+        <value>
+            <name>Command Path</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Ignore STDIN</key>
+        <value>
+            <name>Ignore STDIN</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Working Directory</key>
+        <value>
+            <name>Working Directory</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Argument Delimiter</key>
+        <value>
+            <name>Argument Delimiter</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Output Destination Attribute</key>
+        <value>
+            <name>Output Destination Attribute</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Max Attribute Length</key>
+        <value>
+            <name>Max Attribute Length</name>
+        </value>
+    </entry>
+</descriptors>
+<executionNode>ALL</executionNode>
+<lossTolerant>false</lossTolerant>
+<penaltyDuration>30 sec</penaltyDuration>
+<properties>
+    <entry>
+        <key>Command Arguments</key>
+        <value>${MasterAddress};${base_dir}</value>
+    </entry>
+    <entry>
+        <key>Command Path</key>
+        <value>${base_dir}/scripts/aws/setup_testbench.sh</value>
+    </entry>
+    <entry>
+        <key>Ignore STDIN</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>Working Directory</key>
+    </entry>
+    <entry>
+        <key>Argument Delimiter</key>
+        <value>;</value>
+    </entry>
+    <entry>
+        <key>Output Destination Attribute</key>
+    </entry>
+    <entry>
+        <key>Max Attribute Length</key>
+        <value>256</value>
+    </entry>
+</properties>
+<runDurationMillis>0</runDurationMillis>
+<schedulingPeriod>0 sec</schedulingPeriod>
+<schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+<yieldDuration>1 sec</yieldDuration>
+                            </config>
+                            <executionNodeRestricted>false</executionNodeRestricted>
+                            <name>Setup Hive Testbench</name>
+                            <relationships>
+<autoTerminate>true</autoTerminate>
+<name>nonzero status</name>
+                            </relationships>
+                            <relationships>
+<autoTerminate>true</autoTerminate>
+<name>original</name>
+                            </relationships>
+                            <relationships>
+<autoTerminate>true</autoTerminate>
+<name>output stream</name>
+                            </relationships>
+                            <state>STOPPED</state>
+                            <style/>
+                            <type>org.apache.nifi.processors.standard.ExecuteStreamCommand</type>
+                        </processors>
                     </contents>
                     <name>Provision AWS Cluster</name>
                     <variables/>
@@ -3837,8 +4278,8 @@
                             <id>0d47bbd3-f206-3fd0-0000-000000000000</id>
                             <parentGroupId>c1a7c988-1366-3158-0000-000000000000</parentGroupId>
                             <position>
-<x>724.0529513313799</x>
-<y>143.58609133434697</y>
+<x>741.6586642220049</x>
+<y>141.23864870739385</y>
                             </position>
                             <height>722.0723571777344</height>
                             <label>Uploading Logs to WXM</label>
@@ -5200,7 +5641,7 @@
                 </entry>
                 <entry>
                     <key>emr_master_host</key>
-                    <value>ec2-54-221-9-66.compute-1.amazonaws.com</value>
+                    <value>ec2-54-204-70-118.compute-1.amazonaws.com</value>
                 </entry>
                 <entry>
                     <key>masterSG</key>
@@ -5221,5 +5662,5 @@
             </variables>
         </processGroups>
     </snippet>
-    <timestamp>09/27/2019 17:13:14 EDT</timestamp>
+    <timestamp>10/03/2019 08:25:36 EDT</timestamp>
 </template>
