@@ -1,13 +1,12 @@
+sudo yum -y install git gcc
+
 mkdir test
 cd test
 
-git clone https://github.com/hortonworks/hive-testbench
+git clone https://github.com/paulvid/hive-testbench.git
 
 cd hive-testbench
 
-sed $'s/^HIVE=*/HIVE=\"hive \"\\\n#HIVE=/g' $(pwd)/tpcds-setup.sh > temp.sh
-mv temp.sh tpcds-setup.sh
-
 ./tpcds-build.sh
 
-./tpcds-setup.sh 100
+#./tpcds-setup.sh 100

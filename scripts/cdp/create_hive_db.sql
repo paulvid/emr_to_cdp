@@ -1,4 +1,4 @@
-CREATE DATABASE IF NOT EXISTS worldwidebank LOCATION 's3n://pvidal-emr-bucket/raw/wwbankdata/rawzone/worldwidebank';
+CREATE DATABASE IF NOT EXISTS worldwidebank LOCATION 's3a://pvidal-emr-bucket/raw/wwbankdata/rawzone/worldwidebank';
 
 CREATE EXTERNAL TABLE IF NOT EXISTS worldwidebank.ww_customers(
                                     Gender               STRING
@@ -44,7 +44,7 @@ CREATE EXTERNAL TABLE IF NOT EXISTS worldwidebank.ww_customers(
                                 ) ROW FORMAT DELIMITED
                                   FIELDS TERMINATED BY ','
                                   STORED AS TEXTFILE
-                                  LOCATION 's3n://pvidal-emr-bucket/raw/wwbankdata/rawzone/worldwidebank/ww_customers' 
+                                  LOCATION 's3a://pvidal-emr-bucket/raw/wwbankdata/rawzone/worldwidebank/ww_customers' 
                                   tblproperties("skip.header.line.count"="1");
 
 CREATE EXTERNAL TABLE IF NOT EXISTS worldwidebank.us_customers(
@@ -90,8 +90,8 @@ CREATE EXTERNAL TABLE IF NOT EXISTS worldwidebank.us_customers(
                                  ) ROW FORMAT DELIMITED
                                    FIELDS TERMINATED BY ','
                                    STORED AS TEXTFILE
-                                   LOCATION 's3n://pvidal-emr-bucket/raw/wwbankdata/rawzone/worldwidebank/us_customers'
-				   tblproperties("skip.header.line.count"="1");
+                                   LOCATION 's3a://pvidal-emr-bucket/raw/wwbankdata/rawzone/worldwidebank/us_customers'
+                                   tblproperties("skip.header.line.count"="1");
 
 CREATE EXTERNAL TABLE IF NOT EXISTS worldwidebank.eu_countries (
                                     CountryName STRING
@@ -100,10 +100,10 @@ CREATE EXTERNAL TABLE IF NOT EXISTS worldwidebank.eu_countries (
                                  ) ROW FORMAT DELIMITED
                                    FIELDS TERMINATED BY ','
                                    STORED AS TEXTFILE
-                                   LOCATION 's3n://pvidal-emr-bucket/raw/wwbankdata/rawzone/eu_countries';
+                                   LOCATION 's3a://pvidal-emr-bucket/raw/wwbankdata/rawzone/eu_countries';
 
 
-CREATE DATABASE IF NOT EXISTS finance LOCATION 's3n://pvidal-emr-bucket/raw/wwbankdata/rawzone/finance';
+CREATE DATABASE IF NOT EXISTS finance LOCATION 's3a://pvidal-emr-bucket/raw/wwbankdata/rawzone/finance';
 
 CREATE EXTERNAL TABLE IF NOT EXISTS finance.tax_2009 (
                                     ssn STRING
@@ -113,7 +113,7 @@ CREATE EXTERNAL TABLE IF NOT EXISTS finance.tax_2009 (
                                  ) ROW FORMAT DELIMITED
                                    FIELDS TERMINATED BY ','
                                    STORED AS TEXTFILE
-                                   LOCATION 's3n://pvidal-emr-bucket/raw/wwbankdata/rawzone/finance/tax_2009';
+                                   LOCATION 's3a://pvidal-emr-bucket/raw/wwbankdata/rawzone/finance/tax_2009';
 
 CREATE EXTERNAL TABLE IF NOT EXISTS finance.tax_2010 (
                                    ssn STRING
@@ -123,7 +123,7 @@ CREATE EXTERNAL TABLE IF NOT EXISTS finance.tax_2010 (
                                 ) ROW FORMAT DELIMITED
                                   FIELDS TERMINATED BY ','
                                   STORED AS TEXTFILE
-                                  LOCATION 's3n://pvidal-emr-bucket/raw/wwbankdata/rawzone/finance/tax_2010';
+                                  LOCATION 's3a://pvidal-emr-bucket/raw/wwbankdata/rawzone/finance/tax_2010';
 
 CREATE EXTERNAL TABLE IF NOT EXISTS finance.tax_2015 (
                                    ssn STRING
@@ -133,9 +133,9 @@ CREATE EXTERNAL TABLE IF NOT EXISTS finance.tax_2015 (
                                 ) ROW FORMAT DELIMITED
                                   FIELDS TERMINATED BY ','
                                   STORED AS TEXTFILE
-                                  LOCATION 's3n://pvidal-emr-bucket/raw/wwbankdata/rawzone/finance/tax_2015';
+                                  LOCATION 's3a://pvidal-emr-bucket/raw/wwbankdata/rawzone/finance/tax_2015';
 
-CREATE DATABASE IF NOT EXISTS cost_savings COMMENT 'Cost Savings Database' LOCATION 's3n://pvidal-emr-bucket/raw/wwbankdata/rawzone/cost_savings';
+CREATE DATABASE IF NOT EXISTS cost_savings COMMENT 'Cost Savings Database' LOCATION 's3a://pvidal-emr-bucket/raw/wwbankdata/rawzone/cost_savings';
 
 CREATE EXTERNAL TABLE IF NOT EXISTS cost_savings.claim_savings(
                                      ReportDate DATE
@@ -150,10 +150,10 @@ CREATE EXTERNAL TABLE IF NOT EXISTS cost_savings.claim_savings(
                                     ROW FORMAT DELIMITED
                                     FIELDS TERMINATED BY ','
                                     STORED AS TEXTFILE
-                                    LOCATION 's3n://pvidal-emr-bucket/raw/wwbankdata/rawzone/cost_savings';
+                                    LOCATION 's3a://pvidal-emr-bucket/raw/wwbankdata/rawzone/cost_savings';
 
 
-CREATE DATABASE IF NOT EXISTS claim COMMENT 'Claims Database' LOCATION 's3n://pvidal-emr-bucket/raw/wwbankdata/rawzone/claim';
+CREATE DATABASE IF NOT EXISTS claim COMMENT 'Claims Database' LOCATION 's3a://pvidal-emr-bucket/raw/wwbankdata/rawzone/claim';
 
 CREATE EXTERNAL TABLE IF NOT EXISTS claim.provider_summary(
                                       ProviderID STRING
@@ -171,7 +171,7 @@ CREATE EXTERNAL TABLE IF NOT EXISTS claim.provider_summary(
                                      ROW FORMAT DELIMITED
                                      FIELDS TERMINATED BY ','
                                      STORED AS TEXTFILE
-                                     LOCATION 's3n://pvidal-emr-bucket/raw/wwbankdata/rawzone/claim';
+                                     LOCATION 's3a://pvidal-emr-bucket/raw/wwbankdata/rawzone/claim';
 
 CREATE VIEW IF NOT EXISTS claim.prov_view AS SELECT * FROM claim.provider_summary;
 
@@ -180,7 +180,7 @@ CREATE VIEW IF NOT EXISTS claim.prov_view2 AS SELECT * FROM claim.provider_summa
 CREATE VIEW IF NOT EXISTS claim.claims_view AS SELECT * FROM cost_savings.claim_savings;
 
 
-CREATE DATABASE IF NOT EXISTS consent_master LOCATION 's3n://pvidal-emr-bucket/raw/wwbankdata/rawzone/consent';
+CREATE DATABASE IF NOT EXISTS consent_master LOCATION 's3a://pvidal-emr-bucket/raw/wwbankdata/rawzone/consent';
 
 CREATE EXTERNAL TABLE IF NOT EXISTS consent_master.consent_data(
                                     Country              		STRING
@@ -195,7 +195,7 @@ CREATE EXTERNAL TABLE IF NOT EXISTS consent_master.consent_data(
                                 ) ROW FORMAT DELIMITED
                                   FIELDS TERMINATED BY ','
                                   STORED AS TEXTFILE
-                                  LOCATION 's3n://pvidal-emr-bucket/raw/wwbankdata/rawzone/consent'
+                                  LOCATION 's3a://pvidal-emr-bucket/raw/wwbankdata/rawzone/consent'
 				  tblproperties("skip.header.line.count"="1");
 
 
@@ -205,11 +205,11 @@ CREATE EXTERNAL TABLE IF NOT EXISTS consent_master.eu_countries(
 				                        ) ROW FORMAT DELIMITED
                                   FIELDS TERMINATED BY ','
                                   STORED AS TEXTFILE
-                                  LOCATION 's3n://pvidal-emr-bucket/raw/wwbankdata/rawzone/eu_countries';
+                                  LOCATION 's3a://pvidal-emr-bucket/raw/wwbankdata/rawzone/eu_countries';
 
 
 
-CREATE DATABASE IF NOT EXISTS hr LOCATION 's3n://pvidal-emr-bucket/raw/wwbankdata/rawzone/hr';
+CREATE DATABASE IF NOT EXISTS hr LOCATION 's3a://pvidal-emr-bucket/raw/wwbankdata/rawzone/hr';
 
 CREATE EXTERNAL TABLE IF NOT EXISTS hr.employees(
                                     Id          INT
@@ -223,8 +223,8 @@ CREATE EXTERNAL TABLE IF NOT EXISTS hr.employees(
                                 ) ROW FORMAT DELIMITED
                                   FIELDS TERMINATED BY ','
                                   STORED AS TEXTFILE
-                                  LOCATION 's3n://pvidal-emr-bucket/raw/wwbankdata/rawzone/hr/employees'
-				  tblproperties("skip.header.line.count"="1");
+                                  LOCATION 's3a://pvidal-emr-bucket/raw/wwbankdata/rawzone/hr/employees'
+                                  tblproperties("skip.header.line.count"="1");
 
 CREATE EXTERNAL TABLE IF NOT EXISTS hr.employees_masked(
                                     Id          INT
@@ -238,8 +238,8 @@ CREATE EXTERNAL TABLE IF NOT EXISTS hr.employees_masked(
                                 ) ROW FORMAT DELIMITED
                                   FIELDS TERMINATED BY ','
                                   STORED AS TEXTFILE
-                                  LOCATION 's3n://pvidal-emr-bucket/raw/wwbankdata/rawzone/hr/employees'
-				  tblproperties("skip.header.line.count"="1");
+                                  LOCATION 's3a://pvidal-emr-bucket/raw/wwbankdata/rawzone/hr/employees'
+                                  tblproperties("skip.header.line.count"="1");
 
 CREATE VIEW IF NOT EXISTS hr.us_employees AS SELECT * FROM hr.employees where region='US';
 

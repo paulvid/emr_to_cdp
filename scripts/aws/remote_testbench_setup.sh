@@ -4,14 +4,14 @@
  display_usage() { 
 	echo "
 Usage:
-    $(basename "$0") <clustername> <base_dir> [--help or -h]
+    $(basename "$0") <host> <base_dir> [--help or -h]
 
 Description:
-    Launches as 3 nodes (1 Master, 2 workers) CDP data engineering cluster.
+    Sets up hive testbench for EMR cluster
 
 Arguments:
-    clustername:    name of your cluster
-    base_dir:       the base directory of the emr to cdp demo
+    host:     host to connect to
+    base_dir: the base directory of the emr to cdp demo
     --help or -h:   displays this help"
 
 }
@@ -39,4 +39,4 @@ then
     exit 1
 fi 
 
-cdp datahub create-aws-cluster --request-template $2/template.json --cluster-name $1
+ssh hadoop@$1 'bash -s' < $2/scripts/aws/setup_testbench.sh
