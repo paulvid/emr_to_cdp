@@ -9,7 +9,8 @@ This demo offers an example of moving workloads from EMR to CDP.
 It automates the following:
 * Creating an EMR cluster and uploading Worldwide Bank data and setting up Hive testbench (via nifi flow)
 * Downloading Hive one Tez application logs from EMR and upload them to WXM (via nifi flow)
-* Creating a CDP cluster and uploading Worldwide Bank data and setting up Hive testbench (via nifi flow) -- IN PROGRESS
+* Creating a CDP cluster and setting up Hive testbench (via nifi flow) 
+* Downloading EMR glue information and generating Hive DDL in CDP
 
 # Setup
 
