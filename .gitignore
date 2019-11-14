@@ -12,3 +12,4 @@ data/emr/compressed/*
 data/emr/altus.json
 scripts/cdp/gateway.jks
 scripts/cdp/gateway.pem
+scripts/cdp/cldr_tag_all_instances.sh

@@ -4,14 +4,13 @@
  display_usage() { 
 	echo "
 Usage:
-    $(basename "$0") <clustername> <base_dir> [--help or -h]
+    $(basename "$0") <prefix> [--help or -h]
 
 Description:
-    Launches as 3 nodes (1 Master, 2 workers) CDP data engineering cluster.
+    Describes CDP environment.
 
 Arguments:
-    clustername:    name of your cluster
-    base_dir:       the base directory of the emr to cdp demo
+    prefix:    prefix of your assets
     --help or -h:   displays this help"
 
 }
@@ -25,18 +24,19 @@ fi
 
 
 # Check the numbers of arguments
-if [  $# -lt 2 ] 
+if [  $# -lt 1 ] 
 then 
     echo "Not enough arguments!"
     display_usage
     exit 1
 fi 
 
-if [  $# -gt 2 ] 
+if [  $# -gt 1 ] 
 then 
     echo "Too many arguments!"
     display_usage
     exit 1
 fi 
 
-cdp datahub create-aws-cluster --request-template $2/template.json --cluster-name $1
+
+cdp datahub describe-cluster --cluster-name $1-de-cluster
