@@ -4,15 +4,15 @@
 <configuration>
   <property>
     <name>dfs.namenode.name.dir</name>
-    <value>file:///hadoopfs/fs1/namenode,file:///hadoopfs/fs2/namenode</value>
+    <value>file:///hadoopfs/fs1/namenode</value>
   </property>
   <property>
     <name>dfs.namenode.servicerpc-address</name>
-    <value>ip-10-10-160-208.cloudera.site:8022</value>
+    <value>pvidal001-data-engineering-master3.pvidal00.a465-9q4k.cloudera.site:8022</value>
   </property>
   <property>
     <name>dfs.https.address</name>
-    <value>ip-10-10-160-208.cloudera.site:9871</value>
+    <value>pvidal001-data-engineering-master3.pvidal00.a465-9q4k.cloudera.site:9871</value>
   </property>
   <property>
     <name>dfs.https.port</name>
@@ -20,7 +20,7 @@
   </property>
   <property>
     <name>dfs.namenode.http-address</name>
-    <value>ip-10-10-160-208.cloudera.site:9870</value>
+    <value>pvidal001-data-engineering-master3.pvidal00.a465-9q4k.cloudera.site:9870</value>
   </property>
   <property>
     <name>dfs.replication</name>
@@ -84,14 +84,18 @@
   </property>
   <property>
     <name>dfs.namenode.kerberos.principal</name>
-    <value>hdfs/_HOST@CLOUDERA.SITE</value>
+    <value>hdfs/_HOST@PVIDAL00.A465-9Q4K.CLOUDERA.SITE</value>
   </property>
   <property>
     <name>dfs.namenode.kerberos.internal.spnego.principal</name>
-    <value>HTTP/_HOST@CLOUDERA.SITE</value>
+    <value>HTTP/_HOST@PVIDAL00.A465-9Q4K.CLOUDERA.SITE</value>
   </property>
   <property>
     <name>dfs.datanode.kerberos.principal</name>
-    <value>hdfs/_HOST@CLOUDERA.SITE</value>
+    <value>hdfs/_HOST@PVIDAL00.A465-9Q4K.CLOUDERA.SITE</value>
+  </property>
+  <property>
+    <name>dfs.http.policy</name>
+    <value>HTTPS_ONLY</value>
   </property>
 </configuration>

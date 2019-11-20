@@ -39,12 +39,29 @@ then
     exit 1
 fi 
 
+sleep_duration=3
+
 export AWS_ACCOUNT_ID=$(aws sts get-caller-identity | jq .Account -r)
 
 echo "Deleting Roles"
+aws iam remove-role-from-instance-profile --instance-profile-name $2-idbroker-role --role-name $2-idbroker-role
+
+aws iam delete-instance-profile --instance-profile-name $2-idbroker-role 
+aws iam detach-role-policy --role-name $2-idbroker-role --policy-arn arn:aws:iam::$AWS_ACCOUNT_ID:policy/$2-idbroker-assume-role-policy
 aws iam delete-role --role-name $2-idbroker-role
-aws iam delete-role --role-name $2-datalake-admin-role
-aws iam delete-role --role-name $2-log-role
+
+aws iam detach-role-policy --role-name $2-datalake-admin-role --policy-arn arn:aws:iam::$AWS_ACCOUNT_ID:policy/$2-bucket-policy-s3access
+aws iam detach-role-policy --role-name $2-datalake-admin-role --policy-arn arn:aws:iam::$AWS_ACCOUNT_ID:policy/$2-dynamodb-policy
+aws iam detach-role-policy --role-name $2-datalake-admin-role --policy-arn arn:aws:iam::$AWS_ACCOUNT_ID:policy/$2-datalake-admin-policy-s3access
+aws iam delete-role --role-name $2-datalake-admin-role 
+
+aws iam detach-role-policy --role-name $2-log-role --policy-arn arn:aws:iam::$AWS_ACCOUNT_ID:policy/$2-log-policy-s3access
+aws iam detach-role-policy --role-name $2-log-role --policy-arn arn:aws:iam::$AWS_ACCOUNT_ID:policy/$2-bucket-policy-s3access
+aws iam delete-role --role-name $2-log-role 
+
+aws iam detach-role-policy --role-name $2-ranger-audit-role --policy-arn arn:aws:iam::$AWS_ACCOUNT_ID:policy/$2-bucket-policy-s3access
+aws iam detach-role-policy --role-name $2-ranger-audit-role --policy-arn arn:aws:iam::$AWS_ACCOUNT_ID:policy/$2-ranger-audit-policy-s3access
+aws iam detach-role-policy --role-name $2-ranger-audit-role --policy-arn arn:aws:iam::$AWS_ACCOUNT_ID:policy/$2-dynamodb-policy
 aws iam delete-role --role-name $2-ranger-audit-role
 
 

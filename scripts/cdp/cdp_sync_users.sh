@@ -42,5 +42,5 @@ fi
 sleep_duration=1 
 
 # Create groups
-
-cdp environments sync-all-users --environment-name $2-cdp-env
+env_crn=$(cdp environments describe-environment --environment-name $2-cdp-env | jq -r .environment.crn)
+cdp environments sync-all-users --environment-name $env_crn

@@ -42,7 +42,7 @@ subnetId=$(cdp environments describe-environment --environment-name $1-cdp-env |
 
 cdp datahub create-aws-cluster --cluster-name $1-de-cluster \
     --environment-name $1-cdp-env \
-    --cluster-template-name "CDP 1.1 - Data Engineering: Apache Spark, Apache Hive, Apache Oozie" \
+    --cluster-template-name "CDP 1.2 - Data Engineering: Apache Spark, Apache Hive, Apache Oozie" \
     --instance-groups "nodeCount=1,instanceGroupName=master,instanceGroupType=GATEWAY,instanceType=m5.2xlarge,rootVolumeSize=50,attachedVolumeConfiguration=[{volumeSize=64,volumeCount=2,volumeType=standard}],recoveryMode=MANUAL,volumeEncryption={enableEncryption=false}"  "nodeCount=10,instanceGroupName=worker,instanceGroupType=CORE,instanceType=m5.2xlarge,rootVolumeSize=50,attachedVolumeConfiguration=[{volumeSize=64,volumeCount=2,volumeType=standard}],recoveryMode=MANUAL,volumeEncryption={enableEncryption=false}" "nodeCount=0,instanceGroupName=compute,instanceGroupType=CORE,instanceType=m5.2xlarge,rootVolumeSize=50,attachedVolumeConfiguration=[{volumeSize=64,volumeCount=2,volumeType=standard}],recoveryMode=MANUAL,volumeEncryption={enableEncryption=false}" \
     --subnet-id $subnetId \
-    --image id="509f6b58-8430-441f-4d2e-c8623253385c",catalogName="cloudbreak-default"  
+    --image id="dfcf07fb-b1a2-49ba-5320-6be0fb13a9b0",catalogName="cloudbreak-default"  

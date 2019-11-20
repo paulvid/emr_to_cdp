@@ -44,15 +44,15 @@ fi
 if [$(aws s3api put-object --bucket $2-cdp-bucket --key $2-dl/logs/ | wc -l) -eq 0 ] 
 then
     aws s3api create-bucket --bucket $2-cdp-bucket --region $3
-    aws s3api put-object --bucket $2-cdp-bucket --key $2-dl/logs/ 2&>1
-    aws s3api put-object --bucket $2-cdp-bucket --key $2-dl/ranger/audit/ 2&>1
-    aws s3api put-object --bucket $2-cdp-bucket --key $2-dl/dataeng/ 2&>1
-    aws s3api put-object --bucket $2-cdp-bucket --key $2-dl/datasci/ 2&>1
+    aws s3api put-object --bucket $2-cdp-bucket --key $2-dl/logs/ > /dev/null 2>&1
+    aws s3api put-object --bucket $2-cdp-bucket --key $2-dl/ranger/audit/  > /dev/null 2>&1
+    aws s3api put-object --bucket $2-cdp-bucket --key $2-dl/dataeng/ > /dev/null 2>&1
+    aws s3api put-object --bucket $2-cdp-bucket --key $2-dl/datasci/ > /dev/null2>&1
 else 
-    aws s3api put-object --bucket $2-cdp-bucket --key $2-dl/logs/ 2&>1
-    aws s3api put-object --bucket $2-cdp-bucket --key $2-dl/ranger/audit/ 2&>1
-    aws s3api put-object --bucket $2-cdp-bucket --key $2-dl/dataeng/ 2&>1
-    aws s3api put-object --bucket $2-cdp-bucket --key $2-dl/datasci/ 2&>1
+    aws s3api put-object --bucket $2-cdp-bucket --key $2-dl/logs/ > /dev/null 2>&1
+    aws s3api put-object --bucket $2-cdp-bucket --key $2-dl/ranger/audit/ > /dev/null 2>&1
+    aws s3api put-object --bucket $2-cdp-bucket --key $2-dl/dataeng/ > /dev/null 2>&1
+    aws s3api put-object --bucket $2-cdp-bucket --key $2-dl/datasci/ > /dev/null 2>&1
 fi
 
 

@@ -42,7 +42,7 @@ fi
 
 
 export AWS_ACCOUNT_ID=$(aws sts get-caller-identity | jq .Account -r)
-export DATALAKE_BUCKET=$3
+export DATALAKE_BUCKET=`echo $3`
 export STORAGE_LOCATION_BASE=$3'\/'$2'\-dl'
 export LOGS_LOCATION_BASE=$3'\/'$2'\-dl\/logs'
 export DYNAMODB_TABLE_NAME=$2'\-cdp\-table'
@@ -58,8 +58,9 @@ cat $1/scripts/cdp/aws-pre-req/aws-log-policy-s3access.json | sed s/LOGS_LOCATIO
 aws iam create-policy --policy-name $2-log-policy-s3access --policy-document file://$1/scripts/cdp/aws-pre-req/tmp
 sleep $sleep_duration 
 
-cat $1/scripts/cdp/aws-pre-req/aws-ranger-audit-policy-s3access.json | sed s/STORAGE_LOCATION_BASE/$STORAGE_LOCATION_BASE/g | sed s/DATALAKE_BUCKET/$DATALAKE_BUCKET/g > $1/scripts/cdp/aws-pre-req/tmp
-aws iam create-policy --policy-name $2-ranger-audit-policy-s3access --policy-document file://$1/scripts/cdp/aws-pre-req/tmp
+cat $1/scripts/cdp/aws-pre-req/aws-ranger-audit-policy-s3access.json | sed s/STORAGE_LOCATION_BASE/$STORAGE_LOCATION_BASE/g > $1/scripts/cdp/aws-pre-req/tmp
+cat $1/scripts/cdp/aws-pre-req/tmp |  sed s/DATALAKE_BUCKET/$DATALAKE_BUCKET/g > $1/scripts/cdp/aws-pre-req/tmp2
+aws iam create-policy --policy-name $2-ranger-audit-policy-s3access --policy-document file://$1/scripts/cdp/aws-pre-req/tmp2
 sleep $sleep_duration 
 
 cat  $1/scripts/cdp/aws-pre-req/aws-datalake-admin-policy-s3access.json | sed s/STORAGE_LOCATION_BASE/$STORAGE_LOCATION_BASE/g > $1/scripts/cdp/aws-pre-req/tmp
@@ -77,5 +78,6 @@ aws iam create-policy --policy-name $2-dynamodb-policy --policy-document file://
 sleep $sleep_duration 
 
 rm $1/scripts/cdp/aws-pre-req/tmp
+rm $1/scripts/cdp/aws-pre-req/tmp2
 
 echo "Minimum policies created!"
