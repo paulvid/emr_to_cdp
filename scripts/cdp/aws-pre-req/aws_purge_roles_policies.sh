@@ -57,13 +57,9 @@ aws iam delete-role --role-name $2-datalake-admin-role
 
 aws iam detach-role-policy --role-name $2-log-role --policy-arn arn:aws:iam::$AWS_ACCOUNT_ID:policy/$2-log-policy-s3access
 aws iam detach-role-policy --role-name $2-log-role --policy-arn arn:aws:iam::$AWS_ACCOUNT_ID:policy/$2-bucket-policy-s3access
+aws iam detach-role-policy --role-name $2-log-role --policy-arn arn:aws:iam::$AWS_ACCOUNT_ID:policy/$2-ranger-audit-policy-s3access
+aws iam detach-role-policy --role-name $2-log-role --policy-arn arn:aws:iam::$AWS_ACCOUNT_ID:policy/$2-dynamodb-policy
 aws iam delete-role --role-name $2-log-role 
-
-aws iam detach-role-policy --role-name $2-ranger-audit-role --policy-arn arn:aws:iam::$AWS_ACCOUNT_ID:policy/$2-bucket-policy-s3access
-aws iam detach-role-policy --role-name $2-ranger-audit-role --policy-arn arn:aws:iam::$AWS_ACCOUNT_ID:policy/$2-ranger-audit-policy-s3access
-aws iam detach-role-policy --role-name $2-ranger-audit-role --policy-arn arn:aws:iam::$AWS_ACCOUNT_ID:policy/$2-dynamodb-policy
-aws iam delete-role --role-name $2-ranger-audit-role
-
 
 echo "Deleting Policies"
 aws iam delete-policy --policy-arn arn:aws:iam::$AWS_ACCOUNT_ID:policy/$2-idbroker-assume-role-policy
