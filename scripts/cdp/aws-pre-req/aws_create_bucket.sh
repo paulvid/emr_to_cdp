@@ -41,7 +41,7 @@ then
 fi 
 
 
-if [$(aws s3api put-object --bucket $2-cdp-bucket --key $2-dl/logs/ | wc -l) -eq 0 ] 
+if [ $(aws s3api head-bucket --bucket $2-cdp-bucket 2>&1 | wc -l) -gt 0 ] 
 then
     aws s3api create-bucket --bucket $2-cdp-bucket --region $3
     aws s3api put-object --bucket $2-cdp-bucket --key $2-dl/logs/ > /dev/null 2>&1
