@@ -43,7 +43,7 @@ fi
 
 if [ $(aws s3api head-bucket --bucket $2-cdp-bucket 2>&1 | wc -l) -gt 0 ] 
 then
-    aws s3api create-bucket --bucket $2-cdp-bucket --region $3
+    aws s3api create-bucket --bucket $2-cdp-bucket --region $3 > /dev/null 2>&1
     aws s3api put-object --bucket $2-cdp-bucket --key $2-dl/logs/ > /dev/null 2>&1
     aws s3api put-object --bucket $2-cdp-bucket --key $2-dl/ranger/audit/  > /dev/null 2>&1
     aws s3api put-object --bucket $2-cdp-bucket --key $2-dl/dataeng/ > /dev/null 2>&1
