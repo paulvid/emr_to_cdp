@@ -85,5 +85,5 @@ cdp environments set-id-broker-mappings \
     --environment-name "$2-cdp-env" \
     --data-access-role "arn:aws:iam::$AWS_ACCOUNT_ID:role/$2-datalake-admin-role" \
     --baseline-role "arn:aws:iam::$AWS_ACCOUNT_ID:role/$2-ranger-audit-role" \
-    --mappings accessorCrn=$group_crn,role="arn:aws:iam::$AWS_ACCOUNT_ID:role/$2-idbroker-role" 
+    --mappings accessorCrn=$group_crn,role="arn:aws:iam::$AWS_ACCOUNT_ID:role/$2-datalake-admin-role" 
 
